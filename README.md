@@ -38,8 +38,6 @@ The 'getwd()' function shall determine an absolute pathname of the "current work
 Before running all of the codes, one needs to install the following R packages:
 
     install.packages("mvtnorm")  Version: 1.1-3
-    install.packages("mclust") Version： 6.0.0
-    install.packages("bigmemory") Version: 4.6.1
     install.packages("ggplot2") Version: 3.4.0 
 
 R codes for the implementation of our methodology are provided.
