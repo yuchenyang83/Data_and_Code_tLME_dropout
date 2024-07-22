@@ -1,9 +1,9 @@
 # tLME with with non-ignorable dropout
 
-## Supplementary Material for "Estimation and prediction in $t$ linear mixed models with non-ignorable dropout" by Wan-Lun Wang, Yu-Chen Yang, and Tsung-I Lin
+## Supplementary Material for "Estimation and prediction in $t$ linear mixed models with non-ignorable dropout" by Yu-Chen Yang and Tsung-I Lin
 
 ### Author responsible for the code
-For questions, comments or remarks about the code please contact responsible author, Wan-Lun Wang (wangwl@gs.ncku.edu.tw)
+For questions, comments or remarks about the code please contact responsible author, Yu-Chen Yang (d107053002@smail.nchu.edu.tw)
 
 ### Configurations
 The code was written/evaluated in R with the following software versions:
