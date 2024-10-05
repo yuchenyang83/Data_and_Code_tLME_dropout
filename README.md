@@ -22,12 +22,17 @@ time zone: Asia/Taipei
 tzcode source: internal
 
 attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base     
+[1] grid      stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] glue_1.7.0    pROC_1.18.5   gridExtra_2.3 ggtext_0.1.2  rlang_1.1.4   cowplot_1.1.3 mvtnorm_1.3-1 ggplot2_3.5.1
 
 loaded via a namespace (and not attached):
- [1] utf8_1.2.3       R6_2.5.1         lattice_0.21-8   magrittr_2.0.3   gtable_0.3.4     glue_1.6.2       tibble_3.2.1     pkgconfig_2.0.3  lifecycle_1.0.3 
-[10] ggplot2_3.4.3    cli_3.6.1        fansi_1.0.5      scales_1.2.1     grid_4.3.1       vctrs_0.6.3      compiler_4.3.1   tools_4.3.1      nlme_3.1-162    
-[19] munsell_0.5.0    pillar_1.9.0     colorspace_2.1-0 rlang_1.1.1
+ [1] crayon_1.5.3      vctrs_0.6.5       nlme_3.1-164      cli_3.6.3         generics_0.1.3    labeling_0.4.3    colorspace_2.1-1 
+ [8] plyr_1.8.9        gridtext_0.1.5    scales_1.3.0      fansi_1.0.6       munsell_0.5.1     tibble_3.2.1      lifecycle_1.0.4  
+[15] compiler_4.4.1    dplyr_1.1.4       Rcpp_1.0.13       pkgconfig_2.0.3   rstudioapi_0.16.0 lattice_0.22-6    farver_2.1.2     
+[22] R6_2.5.1          tidyselect_1.2.1  utf8_1.2.4        pillar_1.9.0      magrittr_2.0.3    tools_4.4.1       withr_3.0.1      
+[29] gtable_0.3.5      xml2_1.3.6 
 
 ### Descriptions of the codes 
 Please copy the files to the "current working directory" of the R package.
