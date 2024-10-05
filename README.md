@@ -40,8 +40,15 @@ The 'getwd()' function shall determine an absolute pathname of the "current work
 
 Before running all of the codes, one needs to install the following R packages:
 
-    install.packages("mvtnorm")  Version: 1.1-3
-    install.packages("ggplot2") Version: 3.4.0 
+    install.packages("mvtnorm")  Version: 1.3-1
+    install.packages("ggplot2") Version: 3.5.1
+    install.packages("pROC") Version: 1.18.5
+    install.packages("gridExtra") Version: 2.3
+    install.packages("ggtext") Version: 0.1.2
+    install.packages("rlang") Version: 1.1.4
+    install.packages("cowplot") Version: 1.1.3
+    install.packages("glue") Version: 1.7.0
+    
 
 R codes for the implementation of our methodology are provided.
 
