@@ -78,9 +78,6 @@ R codes for the implementation of our methodology are provided.
 (3) 'functionR' that can assist for fitting the FM-tLME, LME and tLME models with non-ignorable dropout
 
 
-
-	
-
 #### Subfolder: ./Code ####
 './Code/'
        contains 
@@ -90,15 +87,11 @@ R codes for the implementation of our methodology are provided.
        (3) 'Fig3.R' main script for reproducing Figure 3; 
        (4) 'Fig4.R' main script for reproducing Figure 4; 
        (5) 'Fig5.R' main script for reproducing Figure 5; 
-       (6) 'Fig6.R' main script for reproducing Figure 6; 
-       (7) 'Fig7.R' main script for reproducing Figure 7; 
-       (8) 'Fig8.R' main script for reproducing Figure 8; 
        (9) 'Tab1.R' main script for Table 1;
        (10) 'Tab2.R' main script for Table 2;
        (11) 'Tab3.R' main script for Table 3;
        (12) 'Tab4.R' main script for Table 4;
        (13) 'Tab5.R' main script for Table 5;
-       (14) 'Tab6.R' main script for Table 6;
 
 ###### Note for Section 4 - Illustrative examples - simulated data:
 Because the 'simulation.case1.R', 'simulation.case2.R' and 'simulation.case3.R' codes take a huge amount of time to run the ECM procedure for fitting the EFM-NLME and FM-NLME models, we record every 100 replications result in the subfolder ''SS-simulation1'', ''SS-simulation2'', and ''SS-simulation3'' from ./Data/Simulation/' respectively so that one can use the R codes 'Fig1.R', 'Fig2.R', 'Fig3.R', 'Fig4.R', 'Tab1', 'Tab2', and 'Tab3' to obtain the final results immediately.
