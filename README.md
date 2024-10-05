@@ -59,7 +59,7 @@ R codes for the implementation of our methodology are provided.
        (1) the subfolder 'simulation', in this folder contains '.R' file code for simulation studies that can fit the LME and tLME models with non-ignorable dropout consisting of different missing mechanisms;
        (2) the subfolder 'fix_alpha', in this folder contains '.R' file code for sensitivity analysis;
        (3) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-       (4) 'LMMmissingSEM.R' main script for fitting the tLME model with with non-ignorable dropout;
+       (4) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
        (5) 'computer.pvi.R' calculate the probability of dropout for each subject at each time point;
        (6) 'multiplot.R'  main script for combining multiple plots by ggplot2 package.
 
