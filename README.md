@@ -106,7 +106,8 @@ To reproduce the results presented in Figures 1 to 2 and Tables 1 to 3, just  lo
 ###### Note for Section 6 - Illustrative examples - AIDS clinical trial:
 Because the 'fit_aids.R' code takes a huge amount of time to run the MCECM procedure for fitting the fitting the LME and tLME models with non-ignorable dropout, we record these intermediate results in 'fit_result.RData' from ./Data' so that one can use the R codes 'Fig3.R', 'Fig4.R', 'Fig5.R',  'Tab4', and 'Tab5' to obtain the final results immediately.
 To reproduce the results presented in Figures 3, just load 'aids.RData' file in the './Data/source' and then run the script 'Fig5.R' in the subfolder './Code/';
-To reproduce the results presented in Figures 4 and 5, just load 'fit_result.RData' file in the './Data/' and then run the scripts 'Fig4.R' and 'Fig5.R' in the subfolder './Code/';  
+To reproduce the results presented in Figures 4, just load 'fit_result.RData' file in the './Data/' and then run the scripts 'Fig4.R' in the subfolder './Code/';
+To reproduce the results presented in Figures 5, just load 'fit_result.RData' file in the './Data/' and 'fix_alpha1.RData', 'fix_alpha2.RData', 'fix_alpha3.RData', 'fix_alpha4.RData', 'fix_alpha5.RData', 'fix_alpha6.RData', 'fix_alpha7.RData', 'fix_alpha8.RData', 'fix_alpha9.RData', 'fix_alpha10.RData', 'fix_alpha13.RData', 'fix_alpha14.RData', 'fix_alpha15.RData', 'fix_alpha16.RData', 'fix_alpha17.RData', 'fix_alpha18.RData', 'fix_alpha19.RData', 'fix_alpha20.RData', 'fix_alpha21.RData', 'fix_alpha22.RData', in the './Data/fix_alpha/' and then run the scripts 'Fig4.R' in the subfolder './Code/';
 To reproduce the results presented in Tables 4 and 5, just load 'fit_result.RData' file in the './Data/' and then run the scripts 'Tab4.R' and 'Tab5.R' in the subfolder './Code/'
 
        (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
@@ -116,37 +117,42 @@ To reproduce the results presented in Tables 4 and 5, just load 'fit_result.RDat
 './Data/'
        contains 
        
-       (1) 'ACTG315result.RData' collecting the fitting results of the the 1-, 2- and 3-component FM-NLME models and EFM-NLME models with the four scenarios and three within-patient autocorrelation structures to the ACTG 315 data.
-       (2) The subfolder 'Simulation', which contains the three simulation studies used in Section 4, collecting the 100 replications result for each components;
-       (3) The subfolder 'source', which contains the ACTG 315 dataset used in Section 5.
+       (1) 'fit_result.RData' collecting the fitting results of the LME and tLME models with the three missing mechanisms and three within-patient autocorrelation structures to the AIDS data;
+       (2) The subfolder 'Simulation', which contains the three simulation studies used in Section 5, collecting the 100 replications result for each components;
+       (3) The subfolder “fix_alpha”, which contains the results of the sensitivity analysis, collecting fixed alpha 2 value within the range of -16, -8, -2, -1, -0.5, -0.1, -0.05, -0.01, -0.001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 2, 4, 8, 16.
+       (4) The subfolder 'source', which contains the AIDS dataset used in Section 6.
 
 './Data/source'
 	subfolder contains
 	
-    	(1) 'actg315.txt' is the ACTG 315 dataset used in Section 5.
+    	(1) 'aids.RData' is the AIDS dataset used in Section 6.
 
 './Data/Simulation'
 	subfolder contains
 	
-	(1) The subfolder 'SS-simulation1' collects the fitting results for the FM-NLME and EFM-NLME models with g = 2 to 4 based on 100 replications under various sample sizes and PS component.
-	(2)  The subfolder 'SS-simulation1' collects the fitting results for the FM-NLME and EFM-NLME models with g = 2 to 4 based on 100 replications under various sample sizes and WS component.
-	(3)  The subfolder 'SS-simulation1' collects the fitting results for the FM-NLME and EFM-NLME models with g = 2 to 4 based on 100 replications under various sample sizes and NIC component.
+	(1) The subfolder “SS-simulationSEM-t25” contains the fitting results of the LME and tLME models for data with a 25% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
+	(2)  The subfolder “SS-simulationSEM-t50” contains the fitting results of the LME and tLME models for data with a 50% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
+	(3)  The subfolder “SS-simulationSEM-t75” contains the fitting results of the LME and tLME models for data with a 75% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
 
-'./Data/Simulation/SS-simulation1'
+'./Data/Simulation/SS-simulationSEM-t25'
 	subfolder contains
 	
-	(1) SIM2', 'SIM3', 'SIM4', 'SIM5', and 'SIM6' collect the fitting results from 100 replications obtained by fitting the FM-NLME and EFM-NLME models with g = 2 to 4 under various sample sizes and PS component.
+	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' the fitting results of the LME and tLME models for data with a 25% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
 
-'./Data/Simulation/SS-simulation2'
+'./Data/Simulation/SS-simulationSEM-t50'
 	subfolder contains
 	
-	(1) SIM2', 'SIM3', 'SIM4', 'SIM5', and 'SIM6' collect the fitting results from 100 replications obtained by fitting the FM-NLME and EFM-NLME models with g = 2 to 4 under various sample sizes and PS component.
+	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' the fitting results of the LME and tLME models for data with a 50% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
 
-'./Data/Simulation/SS-simulation3'
+ './Data/Simulation/SS-simulationSEM-t75'
 	subfolder contains
- 
-	(1) SIM2', 'SIM3', 'SIM4', 'SIM5', and 'SIM6' collect the fitting results from 100 replications obtained by fitting the FM-NLME and EFM-NLME models with g = 2 to 4 under various sample sizes and NIC component.
+	
+	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' the fitting results of the LME and tLME models for data with a 75% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
 
+ './Data/fix_alpha'
+ 	subfolder contains
+	
+	(1) 'fix_alpha1.RData', 'fix_alpha2.RData', 'fix_alpha3.RData', 'fix_alpha4.RData', 'fix_alpha5.RData', 'fix_alpha6.RData', 'fix_alpha7.RData', 'fix_alpha8.RData', 'fix_alpha9.RData', 'fix_alpha10.RData', 'fix_alpha13.RData', 'fix_alpha14.RData', 'fix_alpha15.RData', 'fix_alpha16.RData', 'fix_alpha17.RData', 'fix_alpha18.RData', 'fix_alpha19.RData', 'fix_alpha20.RData', 'fix_alpha21.RData', 'fix_alpha22.RData' the fitting results of the tLME model under the MNAR mechanism, with the fixed alpha2 parameter values ranging from -16 to 16.
 #### Subfolder: ./Results ####
 './Results/'
        contains 
