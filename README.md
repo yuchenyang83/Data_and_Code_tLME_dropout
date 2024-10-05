@@ -157,16 +157,16 @@ To reproduce the results presented in Tables 4 and 5, just load 'fit_result.RDat
 './Results/'
        contains 
        
-       (1) 'Figure1.eps' shows the trajectory plots for one simulated dataset of size n = 90 generated from EFM-NLME model with true parameters specified in cases (i)–(iii) corresponding to the PS, WS and NIC components.
-       (2) 'Figure2.eps' shows the box plots of CCR and ARI values obtained from fitting the FM-NLME and EFM-NLME models to 100 simulated datasets generated under three considered cases across various sample sizes.
-       (3) 'Figure3.eps' displays the empirical mean absolute relative bias (MARB) for the estimated parameters obtained from fitting the 3-component FM-NLME and EFM-NLME models to 100 datasets simulated under three considered cases with various sample sizes n = 90, 150, 300, 450 and 600.
-       (4) 'Figure4.eps' displays the mean squared errors (MSE) for the estimated parameters obtained from fitting the 3-component FM-NLME and EFM-NLME models to 100 datasets simulated under three considered cases with various sample sizes n = 90, 150, 300, 450 and 600.
-       (5) 'Figure5.eps' displays the trajectory plot of log10(RNA) observations for 48 patients (left panel), bar chart of frequency distribution of numbers of observations (right top panel), and violin plots for log10(RNA) levels for patients in the two pre-specified groups (right bottom panel).
-       (6) 'Table1.csv' lists the average BIC scores for the two fittedmodels together with the frequencies preferred by the criterion under every scenario considered.
-       (7) 'Table2.csv' reports the average BIC values of both models with g = 2–4 components fitted to the data with PS, WS and NIC components and different sample sizes, and the frequencies of each model being selected.
-       (8) 'Table3.csv' reports the MC Sd of each parameter along with the average values of IM SE obtained from the fitted 3-component EFM-NLME model over 100 trials with PS samples.
-       (9) 'Table4.csv' lists the fitting results for the 60 candidate models, including the numbers of unknown parameters, maximized log-likelihood values together with BIC scores for determining the preferred model.
-       (10) 'Table5.csv' presents a comparison of the ML estimates of parameters together with their standard errors (SE) obtained from the best EFM-NLME model and FM-NLME analogue.
+       (1) 'sim-trajectory.eps' shows the trajectory plot of responses for one simulated case of size N = 100 (left panel), box plots for responses for subjects in the two prespecified groups (right top panel), and bar chart of frequency distribution of numbers of observed responses (right bottom panel).
+       (2) 'sim-fig2.eps' shows the MSE scores for the estimated parameters under fitted tLME model with the MNAR mechanism for three dropout rates across various sample sizes.
+       (3) 'AIDS_Figure1.eps' displays the trajectory plots of the square roots of CD4 observations for 467 patients (top panel) and bar chart of frequency distribution of numbers of observed the square roots of CD4 (bottom panel) for the two drug treatments.
+       (4) 'AIDS_Figure2.eps' displays ROC curves obtained from the best fitted LME (dashed lines) and tLME (sold lines) models under the three mechanisms.
+       (5) 'AIDS_Figure3.eps' displays estimated fixed effects parameters (solid line) and 95% confidence intervals (dashed lines) from the fitted tLME model with MNAR.
+       (6) 'Table1.csv' lists the simulation results for assessing the asymptotic standard errors (IM SE) and empirical standard deviations (MC Sd) of parameters estimates under fitted tLME model with the MNAR mechanism across various sample sizes.
+       (7) 'Table2.csv' reports the average AIC and BIC scores together with frequencies (in parentheses) supported by the two criteria for the LME and tLME models with various sample sizes and dropout rates. The result for the best performance per row is highlighted in bold.
+       (8) 'Table3.csv' reports the comparison of predictive accuracies of missing responses in terms of MSPE between the LME and tLME models. The frequencies (Freq) favored by the model with a lower MSPE value are also recorded. The result for the best performance per row is highlighted in bold.
+       (9) 'Table4.csv' lists the fitting results for the 24 candidate models, including the numbers of unknown parameters, maximized log-likelihood values together with AIC and BIC scores for determining the preferred model.
+       (10) 'Table5.csv' presents a comparison of the ML estimates of parameters together with their standard errors (SE) obtained from the tLME model with AR(1) errors under the three mechanisms.
 
 # Additional Remark 
 One can directly run each "source(.)" described in 'master.r' file in the seperate R session to obtain the results.
