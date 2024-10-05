@@ -162,15 +162,11 @@ To reproduce the results presented in Tables 4 and 5, just load 'fit_result.RDat
        (3) 'Figure3.eps' displays the empirical mean absolute relative bias (MARB) for the estimated parameters obtained from fitting the 3-component FM-NLME and EFM-NLME models to 100 datasets simulated under three considered cases with various sample sizes n = 90, 150, 300, 450 and 600.
        (4) 'Figure4.eps' displays the mean squared errors (MSE) for the estimated parameters obtained from fitting the 3-component FM-NLME and EFM-NLME models to 100 datasets simulated under three considered cases with various sample sizes n = 90, 150, 300, 450 and 600.
        (5) 'Figure5.eps' displays the trajectory plot of log10(RNA) observations for 48 patients (left panel), bar chart of frequency distribution of numbers of observations (right top panel), and violin plots for log10(RNA) levels for patients in the two pre-specified groups (right bottom panel).
-       (6) 'Figure6.eps' displays estimated mean curves of log10(RNA) across days (left panel) and violin plots of fitted responses (right panel) obtained form the best fittedFM-NLMEandEFM-NLMEmodels and their predicted clustering labels.
-       (7) 'Figure7.eps' displays plots of CCR scores for the 24 candidate models with g = 2 (left panel) and ROC curves obtained from the best fitted FM-NLME and EFM-NLME models (right panel).
-       (8) 'Figure8.eps' presents the temporal trajectory of log10(RNA) for six randomly selected patients along with their fitted values under the best fitted EFM-LME, EFM-tLME, and EFM-NLME models.
-       (9) 'Table1.csv' lists the average BIC scores for the two fittedmodels together with the frequencies preferred by the criterion under every scenario considered.
-       (10) 'Table2.csv' reports the average BIC values of both models with g = 2–4 components fitted to the data with PS, WS and NIC components and different sample sizes, and the frequencies of each model being selected.
-       (11) 'Table3.csv' reports the MC Sd of each parameter along with the average values of IM SE obtained from the fitted 3-component EFM-NLME model over 100 trials with PS samples.
-       (12) 'Table4.csv' lists the fitting results for the 60 candidate models, including the numbers of unknown parameters, maximized log-likelihood values together with BIC scores for determining the preferred model.
-       (13) 'Table5.csv' presents a comparison of the ML estimates of parameters together with their standard errors (SE) obtained from the best EFM-NLME model and FM-NLME analogue.
-       (14) 'Table6.csv' lists the mean values of MSD, MAD and MARD over 48 patients together with their standard deviations (Std) for comparing the fitting accuracies of the EFM-LME, EFM-tLME, and EFM-NLME models.
+       (6) 'Table1.csv' lists the average BIC scores for the two fittedmodels together with the frequencies preferred by the criterion under every scenario considered.
+       (7) 'Table2.csv' reports the average BIC values of both models with g = 2–4 components fitted to the data with PS, WS and NIC components and different sample sizes, and the frequencies of each model being selected.
+       (8) 'Table3.csv' reports the MC Sd of each parameter along with the average values of IM SE obtained from the fitted 3-component EFM-NLME model over 100 trials with PS samples.
+       (9) 'Table4.csv' lists the fitting results for the 60 candidate models, including the numbers of unknown parameters, maximized log-likelihood values together with BIC scores for determining the preferred model.
+       (10) 'Table5.csv' presents a comparison of the ML estimates of parameters together with their standard errors (SE) obtained from the best EFM-NLME model and FM-NLME analogue.
 
 # Additional Remark 
 One can directly run each "source(.)" described in 'master.r' file in the seperate R session to obtain the results.
