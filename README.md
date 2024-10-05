@@ -58,7 +58,7 @@ R codes for the implementation of our methodology are provided.
        contains 
        
        (1) the subfolder 'simulation', in this folder contains '.R' file code for simulation studies that can fit the LME and tLME models with non-ignorable dropout consisting of different missing mechanisms;
-       (2) the subfolder 'fix_alpha', in this folder contains '.R' file code for sensitivity analysis;
+       (2) the subfolder 'fixed_alpha', in this folder contains '.R' file code for sensitivity analysis;
        (3) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
        (4) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
        (5) 'computer.pvi.R' calculate the probability of dropout for each subject at each time point;
@@ -72,7 +72,7 @@ R codes for the implementation of our methodology are provided.
        (2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
        (3) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
-'./Function/fix_alpha'
+'./Function/fixed_alpha'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the sensitivity analysis, including
 	
        (1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
@@ -121,7 +121,7 @@ To reproduce the results presented in Tables 4 and 5, just load 'fit_result.RDat
        
        (1) 'fit_result.RData' collecting the fitting results of the LME and tLME models with the three missing mechanisms and four within-patient autocorrelation structures to the AIDS data;
        (2) The subfolder 'Simulation', which contains the three simulation studies used in Section 5, collecting the 100 replications result for each components;
-       (3) The subfolder “fix_alpha”, which contains the results of the sensitivity analysis, collecting fixed alpha 2 value within the range of -16, -8, -2, -1, -0.5, -0.1, -0.05, -0.01, -0.001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 2, 4, 8, 16.
+       (3) The subfolder “fixed_alpha”, which contains the results of the sensitivity analysis, collecting fixed alpha 2 value within the range of -16, -8, -2, -1, -0.5, -0.1, -0.05, -0.01, -0.001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 2, 4, 8, 16.
        (4) The subfolder 'source', which contains the AIDS dataset used in Section 6.
 
 './Data/source'
@@ -151,7 +151,7 @@ To reproduce the results presented in Tables 4 and 5, just load 'fit_result.RDat
 	
 	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' the fitting results of the LME and tLME models for data with a 75% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
 
- './Data/fix_alpha'
+ './Data/fixed_alpha'
  	subfolder contains
 	
 	(1) 'fix_alpha1.RData', 'fix_alpha2.RData', 'fix_alpha3.RData', 'fix_alpha4.RData', 'fix_alpha5.RData', 'fix_alpha6.RData', 'fix_alpha7.RData', 'fix_alpha8.RData', 'fix_alpha9.RData', 'fix_alpha10.RData', 'fix_alpha13.RData', 'fix_alpha14.RData', 'fix_alpha15.RData', 'fix_alpha16.RData', 'fix_alpha17.RData', 'fix_alpha18.RData', 'fix_alpha19.RData', 'fix_alpha20.RData', 'fix_alpha21.RData', 'fix_alpha22.RData' the fitting results of the tLME model under the MNAR mechanism, with the fixed alpha2 parameter values ranging from -16 to 16.
