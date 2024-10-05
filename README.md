@@ -68,14 +68,14 @@ R codes for the implementation of our methodology are provided.
 	
        (1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
        (2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
-       (3) 'functionR' that can assist for fitting the FM-tLME, LME and tLME models with non-ignorable dropout
+       (3) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 './Function/fix_alpha'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the sensitivity analysis, including
 	
        (1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
        (2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
-       (3) 'functionR' that can assist for fitting the FM-tLME, LME and tLME models with non-ignorable dropout
+       (3) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 
 #### Subfolder: ./Code ####
