@@ -97,9 +97,9 @@ R codes for the implementation of our methodology are provided.
 Because the 'simSEM25.R', 'simSEM50.R' and 'simSEM75.R' codes take a huge amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout, we record every 100 replications result in the subfolder ''SS-simulationSEM-t25'', ''SS-simulationSEM-t50'', and ''SS-simulationSEM-t75'' from ./Data/Simulation/' respectively so that one can use the R codes 'Fig1.R', 'Fig2.R', 'Fig3.R', 'Fig4.R', 'Fig5.R', 'Tab1', 'Tab2', 'Tab2', 'Tab4', and 'Tab5' to obtain the final results immediately.
 To reproduce the results presented in Figures 1 to 5 and Tables 1 to 5, just  load the subfolder ''SS-simulationSEM-t25'', ''SS-simulationSEM-t50'', and ''SS-simulationSEM-t75' files in the './Data/Simulation/' and then run the scripts 'Fig1.R', 'Fig2.R', 'Fig3.R', 'Fig4.R', 'Fig5.R', 'Tab1', 'Tab2', 'Tab2', 'Tab4', and 'Tab5' in the subfolder './Code/';
 
-       (11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
-       (12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
-       (13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
+(11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
+(12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
+(13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
 
 
 
@@ -109,7 +109,7 @@ To reproduce the results presented in Figures 5, just load 'actg315.txt' file in
 To reproduce the results presented in Figures 6, 7, and 8, just load 'actg315_code.RData' file in the './Data/' and then run the scripts 'Fig6.R', 'Fig7.R', and 'Fig8.R' in the subfolder './Code/';  
 To reproduce the results presented in Tables 4, 5, and 6, just load 'actg315_code.RData' file in the './Data/' and then run the scripts 'Tab4.R', 'Tab5.R', and 'Tab6.R' in the subfolder './Code/'
 
-       (18) 'actg315_code.R' main script for fitting the 1-, 2- and 3-component FM-NLME and the 2- and 3-component EFM-NLME models. It includes four scenarios to incorporate fixed and random effects, along with three structures for within-patient autocorrelation.
+(14) 'actg315_code.R' main script for fitting the 1-, 2- and 3-component FM-NLME and the 2- and 3-component EFM-NLME models. It includes four scenarios to incorporate fixed and random effects, along with three structures for within-patient autocorrelation.
 
 
 #### Subfolder: ./Data ####
