@@ -63,9 +63,9 @@ R codes for the implementation of our methodology are provided.
 './Function/simulation'
 	subfolder collects functions for maximum likelihood (ML) estimation for FM-NLME and EFM-NLME models, including
 	
-    	(1) 'Efmnlmm.fn.R' main script for fitting the EFM-tLME model
-    	(2) 'fmnlmm.fn.R' main script for fitting the FM-tLME model
-    	(3) 'multiplot.R'  main script for combining multiple plots by ggplot2 package.
+(1) 'Efmnlmm.fn.R' main script for fitting the EFM-tLME model
+(2) 'fmnlmm.fn.R' main script for fitting the FM-tLME model
+(3) 'multiplot.R'  main script for combining multiple plots by ggplot2 package.
 	
 
 #### Subfolder: ./Code ####
