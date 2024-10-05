@@ -1,4 +1,4 @@
-# tLME with with non-ignorable dropout
+# tLME with non-ignorable dropout
 
 ## Supplementary Material for "Estimation and prediction in $t$ linear mixed models with non-ignorable dropout" by Yu-Chen Yang, Wan-Lun Wang, Luis M. Castro, and Tsung-I Lin
 
