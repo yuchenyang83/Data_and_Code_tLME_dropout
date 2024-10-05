@@ -117,7 +117,7 @@ To reproduce the results presented in Tables 4 and 5, just load 'fit_result.RDat
 './Data/'
        contains 
        
-       (1) 'fit_result.RData' collecting the fitting results of the LME and tLME models with the three missing mechanisms and three within-patient autocorrelation structures to the AIDS data;
+       (1) 'fit_result.RData' collecting the fitting results of the LME and tLME models with the three missing mechanisms and four within-patient autocorrelation structures to the AIDS data;
        (2) The subfolder 'Simulation', which contains the three simulation studies used in Section 5, collecting the 100 replications result for each components;
        (3) The subfolder “fix_alpha”, which contains the results of the sensitivity analysis, collecting fixed alpha 2 value within the range of -16, -8, -2, -1, -0.5, -0.1, -0.05, -0.01, -0.001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 2, 4, 8, 16.
        (4) The subfolder 'source', which contains the AIDS dataset used in Section 6.
