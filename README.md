@@ -7,29 +7,27 @@ For questions, comments or remarks about the code please contact responsible aut
 
 ### Configurations
 The code was written/evaluated in R with the following software versions:
-R version 4.2.2 (2022-10-31)
-Platform: x86_64-apple-darwin17.0 (64-bit)
-Running under: macOS Ventura 13.0
+R version 4.3.1 (2023-06-16 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19045)
 
-Matrix products:default
- 
+Matrix products: default
+
+
 locale:
-[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+[1] LC_COLLATE=Chinese (Traditional)_Taiwan.utf8  LC_CTYPE=Chinese (Traditional)_Taiwan.utf8    LC_MONETARY=Chinese (Traditional)_Taiwan.utf8
+[4] LC_NUMERIC=C                                  LC_TIME=Chinese (Traditional)_Taiwan.utf8    
+
+time zone: Asia/Taipei
+tzcode source: internal
 
 attached base packages:
-[1] grid      parallel  stats     graphics  grDevices utils     datasets  methods   base     
-
-other attached packages:
- [1] pROC_1.18.0     gridExtra_2.3   dplyr_1.1.0     rlang_1.0.6     cowplot_1.1.1   ggtext_0.1.2    bigmemory_4.6.1 mclust_6.0.0   
- [9] mvtnorm_1.2-2   nlme_3.1-160    ggplot2_3.4.0  
+[1] stats     graphics  grDevices utils     datasets  methods   base     
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.10         plyr_1.8.8          pillar_1.8.1        compiler_4.2.2      tools_4.2.2         uuid_1.1-0         
- [7] lifecycle_1.0.3     tibble_3.1.8        gtable_0.3.1        lattice_0.20-45     pkgconfig_2.0.3     cli_3.6.0          
-[13] rstudioapi_0.14     withr_2.5.0         xml2_1.3.3          generics_0.1.3      vctrs_0.5.2         tidyselect_1.2.0   
-[19] gridtext_0.1.5      glue_1.6.2          R6_2.5.1            fansi_1.0.4         bigmemory.sri_0.1.6 farver_2.1.1       
-[25] magrittr_2.0.3      scales_1.2.1        colorspace_2.1-0    labeling_0.4.2      utf8_1.2.2          munsell_0.5.0      
-[31] crayon_1.5.2 
+ [1] utf8_1.2.3       R6_2.5.1         lattice_0.21-8   magrittr_2.0.3   gtable_0.3.4     glue_1.6.2       tibble_3.2.1     pkgconfig_2.0.3  lifecycle_1.0.3 
+[10] ggplot2_3.4.3    cli_3.6.1        fansi_1.0.5      scales_1.2.1     grid_4.3.1       vctrs_0.6.3      compiler_4.3.1   tools_4.3.1      nlme_3.1-162    
+[19] munsell_0.5.0    pillar_1.9.0     colorspace_2.1-0 rlang_1.1.1
 
 ### Descriptions of the codes 
 Please copy the files to the "current working directory" of the R package.
