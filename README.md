@@ -87,22 +87,23 @@ R codes for the implementation of our methodology are provided.
        (3) 'Fig3.R' main script for reproducing Figure 3; 
        (4) 'Fig4.R' main script for reproducing Figure 4; 
        (5) 'Fig5.R' main script for reproducing Figure 5; 
-       (9) 'Tab1.R' main script for Table 1;
-       (10) 'Tab2.R' main script for Table 2;
-       (11) 'Tab3.R' main script for Table 3;
-       (12) 'Tab4.R' main script for Table 4;
-       (13) 'Tab5.R' main script for Table 5;
+       (6) 'Tab1.R' main script for Table 1;
+       (7) 'Tab2.R' main script for Table 2;
+       (8) 'Tab3.R' main script for Table 3;
+       (9) 'Tab4.R' main script for Table 4;
+       (10) 'Tab5.R' main script for Table 5;
 
-###### Note for Section 4 - Illustrative examples - simulated data:
-Because the 'simulation.case1.R', 'simulation.case2.R' and 'simulation.case3.R' codes take a huge amount of time to run the ECM procedure for fitting the EFM-NLME and FM-NLME models, we record every 100 replications result in the subfolder ''SS-simulation1'', ''SS-simulation2'', and ''SS-simulation3'' from ./Data/Simulation/' respectively so that one can use the R codes 'Fig1.R', 'Fig2.R', 'Fig3.R', 'Fig4.R', 'Tab1', 'Tab2', and 'Tab3' to obtain the final results immediately.
-To reproduce the results presented in Figures 1 to 4 and Tables 1 to 3, just  load the subfolder 'SS-simulation1', 'SS-simulation2', and 'SS-simulation3' files in the './Data/Simulation/' and then run the scripts 'Fig1.R', 'Fig2.R', 'Fig3.R', 'Fig4.R', 'Tab1', 'Tab2', and 'Tab3' in the subfolder './Code/';
+###### Note for Section 5 - Illustrative examples - simulated data:
+Because the 'simSEM25.R', 'simSEM50.R' and 'simSEM75.R' codes take a huge amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout, we record every 100 replications result in the subfolder ''SS-simulationSEM-t25'', ''SS-simulationSEM-t50'', and ''SS-simulationSEM-t75'' from ./Data/Simulation/' respectively so that one can use the R codes 'Fig1.R', 'Fig2.R', 'Fig3.R', 'Fig4.R', 'Fig5.R', 'Tab1', 'Tab2', 'Tab2', 'Tab4', and 'Tab5' to obtain the final results immediately.
+To reproduce the results presented in Figures 1 to 5 and Tables 1 to 5, just  load the subfolder ''SS-simulationSEM-t25'', ''SS-simulationSEM-t50'', and ''SS-simulationSEM-t75' files in the './Data/Simulation/' and then run the scripts 'Fig1.R', 'Fig2.R', 'Fig3.R', 'Fig4.R', 'Fig5.R', 'Tab1', 'Tab2', 'Tab2', 'Tab4', and 'Tab5' in the subfolder './Code/';
 
-       (15) ''simulation.case1.R' main script for fitting the FM-NLME and EFM-NLME models with g = 2 to 4 to simulated datasets with PS component; and
-       (16) ''simulation.case2.R' main script for fitting the FM-NLME and EFM-NLME models with g = 2 to 4 to simulated datasets with WS component; and
-       (17) ''simulation.case3.R' main script for fitting the FM-NLME and EFM-NLME models with g = 2 to 4 to simulated datasets with NIC component.
-       
+       (11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
+       (12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
+       (13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
 
-###### Note for Section 5 - Illustrative examples - ACTG 315 data:
+
+
+###### Note for Section 6 - Illustrative examples - AIDS clinical trial:
 Because the 'actg315_code.R' code takes a huge amount of time to run the ECM procedure for fitting the FM-NLME and EFM-NLME models, we record these intermediate results in 'ACTG315result.RData' so that one can use the R codes 'Fig5.R', 'Fig6.R', 'Fig7.R', 'Fig8.R', 'Tab4.R', 'Tab5.R', and 'Tab6.R' to obtain the final results immediately.
 To reproduce the results presented in Figures 5, just load 'actg315.txt' file in the './Data/source' and then run the script 'Fig5.R' in the subfolder './Code/';
 To reproduce the results presented in Figures 6, 7, and 8, just load 'actg315_code.RData' file in the './Data/' and then run the scripts 'Fig6.R', 'Fig7.R', and 'Fig8.R' in the subfolder './Code/';  
