@@ -114,7 +114,7 @@ R codes for the implementation of our methodology are provided.
 1. The 'fit_aids.R' code takes a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
 2. Intermediate results are recorded in 'fit_result.RData' located in './Data' so that the R codes 'Fig3.R', 'Fig4.R', 'Fig5.R', 'Tab4.R', and 'Tab5.R' can be used to obtain the final results immediately.
 
-	(14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
+       (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
 
 
 #### Subfolder: ./Data ####
