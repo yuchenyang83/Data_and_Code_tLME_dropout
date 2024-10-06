@@ -99,13 +99,15 @@ R codes for the implementation of our methodology are provided.
 1. The 'simSEM25.R', 'simSEM50.R', and 'simSEM75.R' codes require a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
 2. Every 100 replications result is recorded in the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' from './Data/Simulation/' respectively.
 3. The R codes 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' can be used to obtain the final results immediately.
-4. To reproduce the results presented in Figures 1 and 2 and Tables 1 to 3: (i) Load the files from the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' located in './Data/Simulation/'. (ii) Then, run the scripts 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' from the subfolder './Code/'.
+4. To reproduce the results presented in **Figures 1 and 2** and **Tables 1 to 3**:
+   - Load the files from the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' located in './Data/Simulation/'.
+   - Then, run the scripts 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' from the subfolder './Code/'.
 
 
-
-       (11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
-       (12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
-       (13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
+###
+	(11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
+	(12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
+	(13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
 
 
 
@@ -116,7 +118,8 @@ R codes for the implementation of our methodology are provided.
    - **For Figure 3:** (i) Load the 'aids.RData' file from './Data/source'. (ii) Run the 'Fig3.R' script from the './Code/' subfolder.
    - **For Figure 4:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Run the 'Fig4.R' script from the './Code/' subfolder.
    - **For Figure 5:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Load the 'fix_alpha' files: 'fix_alpha1.RData' through 'fix_alpha22.RData' from the './Data/fix_alpha/' directory. (iii) Run the 'Fig4.R' script from the './Code/' subfolder.
-   - **For Table 4 & 5:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Run the 'Tab4.R' and 'Tab5.R' scripts from the './Code/' subfolder.
+   - **For Table 4 & 5:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Run the 'Tab4.R' and 'Tab5.R' scripts from the './Code/' subfolder
+###
 
 
 
@@ -127,15 +130,15 @@ R codes for the implementation of our methodology are provided.
 './Data/'
        contains 
        
-       (1) 'fit_result.RData' collecting the fitting results of the LME and tLME models with the three missing mechanisms and four within-patient autocorrelation structures to the AIDS data;
-       (2) The subfolder 'Simulation', which contains the three simulation studies used in Section 5, collecting the 100 replications result for each components;
-       (3) The subfolder “fixed_alpha”, which contains the results of the sensitivity analysis, collecting fixed alpha 2 value within the range of -16, -8, -2, -1, -0.5, -0.1, -0.05, -0.01, -0.001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 2, 4, 8, 16.
-       (4) The subfolder 'source', which contains the AIDS dataset used in Section 6.
+	(1) 'fit_result.RData' collecting the fitting results of the LME and tLME models with the three missing mechanisms and four within-patient autocorrelation structures to the AIDS data;
+	(2) The subfolder 'Simulation', which contains the three simulation studies used in Section 5, collecting the 100 replications result for each components;
+	(3) The subfolder “fixed_alpha”, which contains the results of the sensitivity analysis, collecting fixed alpha 2 value within the range of -16, -8, -2, -1, -0.5, -0.1, -0.05, -0.01, -0.001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 2, 4, 8, 16.
+	(4) The subfolder 'source', which contains the AIDS dataset used in Section 6.
 
 './Data/source'
 	subfolder contains
 	
-    	(1) 'aids.RData' is the AIDS dataset used in Section 6.
+	(1) 'aids.RData' is the AIDS dataset used in Section 6.
 
 './Data/Simulation'
 	subfolder contains
