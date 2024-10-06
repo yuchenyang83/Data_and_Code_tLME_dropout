@@ -120,7 +120,7 @@ R codes for the implementation of our methodology are provided.
 
 
 
-       (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
+ (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
 
 
 #### Subfolder: ./Data ####
