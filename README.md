@@ -1,6 +1,6 @@
 # tLME models with non-ignorable dropout
 
-## Supplementary Material for "Extending t linear mixed models for longitudinal data with non-ignorable dropout applied to AIDS studies" by Yu-Chen Yang, Wan-Lun Wang, Luis M. Castro, and Tsung-I Lin
+## Supplementary Material for "Extending $t$ linear mixed models for longitudinal data with non-ignorable dropout applied to AIDS studies" by Yu-Chen Yang, Wan-Lun Wang, Luis M. Castro, and Tsung-I Lin
 
 ### Author responsible for the code
 For questions, comments or remarks about the code please contact responsible author, Yu-Chen Yang (d107053002@smail.nchu.edu.tw)
