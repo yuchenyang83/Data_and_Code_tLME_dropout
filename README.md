@@ -99,9 +99,7 @@ R codes for the implementation of our methodology are provided.
 1. The 'simSEM25.R', 'simSEM50.R', and 'simSEM75.R' codes require a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
 2. Every 100 replications result is recorded in the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' from './Data/Simulation/' respectively.
 3. The R codes 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' can be used to obtain the final results immediately.
-4. To reproduce the results presented in Figures 1 and 2 and Tables 1 to 3:
-   - Load the files from the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' located in './Data/Simulation/'.
-   - Then, run the scripts 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' from the subfolder './Code/'.
+4. To reproduce the results presented in Figures 1 and 2 and Tables 1 to 3: (i) Load the files from the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' located in './Data/Simulation/'. (ii) Then, run the scripts 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' from the subfolder './Code/'.
 
 
 
