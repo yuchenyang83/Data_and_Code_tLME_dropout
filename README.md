@@ -96,8 +96,12 @@ R codes for the implementation of our methodology are provided.
        (10) 'Tab5.R' main script for Table 5;
 
 ###### Note for Section 5 - Illustrative examples - simulated data:
-Because the 'simSEM25.R', 'simSEM50.R' and 'simSEM75.R' codes take a huge amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout, we record every 100 replications result in the subfolder 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' from ./Data/Simulation/' respectively so that one can use the R codes 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' to obtain the final results immediately.
-To reproduce the results presented in Figures 1 to 2 and Tables 1 to 3, just  load the subfolder ''SS-simulationSEM-t25'', ''SS-simulationSEM-t50'', and ''SS-simulationSEM-t75' files in the './Data/Simulation/' and then run the scripts 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' in the subfolder './Code/';
+1. The 'simSEM25.R', 'simSEM50.R', and 'simSEM75.R' codes require a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
+2. Every 100 replications result is recorded in the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' from './Data/Simulation/' respectively.
+3. The R codes 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' can be used to obtain the final results immediately.
+4. To reproduce the results presented in Figures 1 and 2 and Tables 1 to 3:
+   4.1 Load the files from the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' located in './Data/Simulation/'.
+   4.2 Then, run the scripts 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' from the subfolder './Code/'.
 
        (11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
        (12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
