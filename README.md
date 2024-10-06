@@ -105,7 +105,7 @@ R codes for the implementation of our methodology are provided.
 
        (11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
        (12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
-       The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
+       (13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
 
 
 
@@ -119,7 +119,7 @@ R codes for the implementation of our methodology are provided.
    - **For Table 4 & 5:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Run the 'Tab4.R' and 'Tab5.R' scripts from the './Code/' subfolder.
 
 
-
+       (11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
  (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
 
 
