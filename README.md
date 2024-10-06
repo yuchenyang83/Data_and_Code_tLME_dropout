@@ -57,43 +57,43 @@ R codes for the implementation of our methodology are provided.
 './Function/'
        contains 
        
-       (1) the subfolder 'simulation', in this folder contains '.R' file code for simulation studies that can fit the LME and tLME models with non-ignorable dropout consisting of different missing mechanisms;
-       (2) the subfolder 'fixed_alpha', in this folder contains '.R' file code for sensitivity analysis;
-       (3) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-       (4) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
-       (5) 'computer.pvi.R' calculate the probability of dropout for each subject at each time point;
-       (6) 'multiplot.R'  main script for combining multiple plots by ggplot2 package;
-       (7) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout.
+	(1) the subfolder 'simulation', in this folder contains '.R' file code for simulation studies that can fit the LME and tLME models with non-ignorable dropout consisting of different missing mechanisms;
+	(2) the subfolder 'fixed_alpha', in this folder contains '.R' file code for sensitivity analysis;
+	(3) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
+	(4) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
+	(5) 'computer.pvi.R' calculate the probability of dropout for each subject at each time point;
+	(6) 'multiplot.R'  main script for combining multiple plots by ggplot2 package;
+	(7) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout.
 
 './Function/simulation'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the simulation study, including
 	
-       (1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-       (2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
-       (3) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout
+	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
+	(2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
+	(3) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 './Function/fixed_alpha'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the sensitivity analysis, including
 	
-       (1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-       (2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
-       (3) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout
+	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
+	(2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
+	(3) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 
 #### Subfolder: ./Code ####
 './Code/'
        contains 
        
-       (1) 'Fig1.R' main script for reproducing Figure 1;
-       (2) 'Fig2.R' main script for reproducing Figure 2; 
-       (3) 'Fig3.R' main script for reproducing Figure 3; 
-       (4) 'Fig4.R' main script for reproducing Figure 4; 
-       (5) 'Fig5.R' main script for reproducing Figure 5; 
-       (6) 'Tab1.R' main script for Table 1;
-       (7) 'Tab2.R' main script for Table 2;
-       (8) 'Tab3.R' main script for Table 3;
-       (9) 'Tab4.R' main script for Table 4;
-       (10) 'Tab5.R' main script for Table 5;
+	(1) 'Fig1.R' main script for reproducing Figure 1;
+	(2) 'Fig2.R' main script for reproducing Figure 2; 
+	(3) 'Fig3.R' main script for reproducing Figure 3; 
+	(4) 'Fig4.R' main script for reproducing Figure 4; 
+	(5) 'Fig5.R' main script for reproducing Figure 5; 
+	(6) 'Tab1.R' main script for Table 1;
+	(7) 'Tab2.R' main script for Table 2;
+	(8) 'Tab3.R' main script for Table 3;
+	(9) 'Tab4.R' main script for Table 4;
+	(10) 'Tab5.R' main script for Table 5;
 
 ###### Note for Section 5 - Illustrative examples - simulated data:
 1. The 'simSEM25.R', 'simSEM50.R', and 'simSEM75.R' codes require a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
@@ -120,10 +120,7 @@ R codes for the implementation of our methodology are provided.
 
 
 
-
-
-       (11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
- (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
+       (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
 
 
 #### Subfolder: ./Data ####
