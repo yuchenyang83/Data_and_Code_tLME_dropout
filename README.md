@@ -105,9 +105,9 @@ R codes for the implementation of our methodology are provided.
 
 
 ###
-	(11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
-	(12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
-	(13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
+	(11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 25% dropout rate.
+	(12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 50% dropout rate.
+	(13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 75% dropout rate.
 
 
 
@@ -123,17 +123,17 @@ R codes for the implementation of our methodology are provided.
 
 
 
-	(14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
+	(14) 'fit_aids.R' is the main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
 
 
 #### Subfolder: ./Data ####
 './Data/'
        contains 
        
-	(1) 'fit_result.RData' collecting the fitting results of the LME and tLME models with the three missing mechanisms and four within-patient autocorrelation structures to the AIDS data;
-	(2) The subfolder 'Simulation', which contains the three simulation studies used in Section 5, collecting the 100 replications result for each components;
-	(3) The subfolder “fixed_alpha”, which contains the results of the sensitivity analysis, collecting fixed alpha 2 value within the range of -16, -8, -2, -1, -0.5, -0.1, -0.05, -0.01, -0.001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 2, 4, 8, 16.
-	(4) The subfolder 'source', which contains the AIDS dataset used in Section 6.
+	(1) 'fit_result.RData' collects the fitting results of the LME and tLME models with the three missing data mechanisms and four within-patient autocorrelation structures applied to the AIDS data.
+	(2) The subfolder 'Simulation' contains the three simulation studies used in Section 5, collecting the results of 100 replications for each component.
+	(3) The subfolder 'fixed_alpha' contains the results of the sensitivity analysis, collecting fixed alpha 2 values within the range of -16, -8, -2, -1, -0.5, -0.1, -0.05, -0.01, -0.001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 2, 4, 8, 16.
+	(4) The subfolder 'source' contains the AIDS dataset used in Section 6.
 
 './Data/source'
 	subfolder contains
@@ -143,34 +143,34 @@ R codes for the implementation of our methodology are provided.
 './Data/Simulation'
 	subfolder contains
 	
-	(1) The subfolder “SS-simulationSEM-t25” contains the fitting results of the LME and tLME models for data with a 25% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
-	(2)  The subfolder “SS-simulationSEM-t50” contains the fitting results of the LME and tLME models for data with a 50% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
-	(3)  The subfolder “SS-simulationSEM-t75” contains the fitting results of the LME and tLME models for data with a 75% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
+	(1) The subfolder 'SS-simulationSEM-t25' contains the fitting results of the LME and tLME models for data with a 25% dropout rate, where three missing data mechanisms are based on 100 repetitions across various sample sizes.
+	(2) The subfolder 'SS-simulationSEM-t50' contains the fitting results of the LME and tLME models for data with a 50% dropout rate, where three missing data mechanisms are based on 100 repetitions across various sample sizes.
+	(3) The subfolder 'SS-simulationSEM-t75' contains the fitting results of the LME and tLME models for data with a 75% dropout rate, where three missing data mechanisms are based on 100 repetitions across various sample sizes.
 
 './Data/Simulation/SS-simulationSEM-t25'
 	subfolder contains
 	
-	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' the fitting results of the LME and tLME models for data with a 25% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
+	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' contain the fitting results of the LME and tLME models for data with a 25% dropout rate, where three missing data mechanisms are based on 100 repetitions across various sample sizes.
 
 './Data/Simulation/SS-simulationSEM-t50'
 	subfolder contains
 	
-	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' the fitting results of the LME and tLME models for data with a 50% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
+	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' contain the fitting results of the LME and tLME models for data with a 50% dropout rate, where three missing data mechanisms are based on 100 repetitions across various sample sizes.
 
  './Data/Simulation/SS-simulationSEM-t75'
 	subfolder contains
 	
-	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' the fitting results of the LME and tLME models for data with a 75% dropout rate, where three missing data mechanisms are based on 100 repetitions under various sample sizes.
+	(1) 'SIM1', 'SIM2', 'SIM3', 'SIM4', and 'SIM5' contain the fitting results of the LME and tLME models for data with a 75% dropout rate, where three missing data mechanisms are based on 100 repetitions across various sample sizes.
 
  './Data/fixed_alpha'
  	subfolder contains
 	
-	(1) 'fix_alpha1.RData', 'fix_alpha2.RData', 'fix_alpha3.RData', 'fix_alpha4.RData', 'fix_alpha5.RData', 'fix_alpha6.RData', 'fix_alpha7.RData', 'fix_alpha8.RData', 'fix_alpha9.RData', 'fix_alpha10.RData', 'fix_alpha13.RData', 'fix_alpha14.RData', 'fix_alpha15.RData', 'fix_alpha16.RData', 'fix_alpha17.RData', 'fix_alpha18.RData', 'fix_alpha19.RData', 'fix_alpha20.RData', 'fix_alpha21.RData', 'fix_alpha22.RData' the fitting results of the tLME model under the MNAR mechanism, with the fixed alpha2 parameter values ranging from -16 to 16.
+	(1) 'fix_alpha1.RData', 'fix_alpha2.RData', 'fix_alpha3.RData', 'fix_alpha4.RData', 'fix_alpha5.RData', 'fix_alpha6.RData', 'fix_alpha7.RData', 'fix_alpha8.RData', 'fix_alpha9.RData', 'fix_alpha10.RData', 'fix_alpha13.RData', 'fix_alpha14.RData', 'fix_alpha15.RData', 'fix_alpha16.RData', 'fix_alpha17.RData', 'fix_alpha18.RData', 'fix_alpha19.RData', 'fix_alpha20.RData', 'fix_alpha21.RData', and 'fix_alpha22.RData' contain the fitting results of the tLME model under the MNAR mechanism, with the fixed alpha2 parameter values ranging from -16 to 16.
 #### Subfolder: ./Results ####
 './Results/'
        contains 
        
-       (1) 'sim-trajectory.eps' shows the trajectory plot of responses for one simulated case of size N = 100 (left panel), box plots for responses for subjects in the two prespecified groups (right top panel), and bar chart of frequency distribution of numbers of observed responses (right bottom panel).
+       (1) 'sim-trajectory.eps' shows the trajectory plot of responses for one simulated case of size N = 100 (left panel), box plots for responses for subjects in the two prespecified groups (right top panel), and bar chart of frequency distribution of number of observed responses (right bottom panel).
        (2) 'sim-fig2.eps' shows the MSE scores for the estimated parameters under fitted tLME model with the MNAR mechanism for three dropout rates across various sample sizes.
        (3) 'AIDS_Figure1.eps' displays the trajectory plots of the square roots of CD4 observations for 467 patients (top panel) and bar chart of frequency distribution of numbers of observed the square roots of CD4 (bottom panel) for the two drug treatments.
        (4) 'AIDS_Figure2.eps' displays ROC curves obtained from the best fitted LME (dashed lines) and tLME (sold lines) models under the three mechanisms.
@@ -178,7 +178,7 @@ R codes for the implementation of our methodology are provided.
        (6) 'Table1.csv' lists the simulation results for assessing the asymptotic standard errors (IM SE) and empirical standard deviations (MC Sd) of parameters estimates under fitted tLME model with the MNAR mechanism across various sample sizes.
        (7) 'Table2.csv' reports the average AIC and BIC scores together with frequencies (in parentheses) supported by the two criteria for the LME and tLME models with various sample sizes and dropout rates. The result for the best performance per row is highlighted in bold.
        (8) 'Table3.csv' reports the comparison of predictive accuracies of missing responses in terms of MSPE between the LME and tLME models. The frequencies (Freq) favored by the model with a lower MSPE value are also recorded. The result for the best performance per row is highlighted in bold.
-       (9) 'Table4.csv' lists the fitting results for the 24 candidate models, including the numbers of unknown parameters, maximized log-likelihood values together with AIC and BIC scores for determining the preferred model.
+       (9) 'Table4.csv' lists the fitting results for the 24 candidate models, including the number of unknown parameters, maximized log-likelihood values together with AIC and BIC scores for determining the preferred model.
        (10) 'Table5.csv' presents a comparison of the ML estimates of parameters together with their standard errors (SE) obtained from the tLME model with AR(1) errors under the three mechanisms.
 
 # Additional Remark 
