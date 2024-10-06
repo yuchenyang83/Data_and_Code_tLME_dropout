@@ -100,8 +100,8 @@ R codes for the implementation of our methodology are provided.
 2. Every 100 replications result is recorded in the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' from './Data/Simulation/' respectively.
 3. The R codes 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' can be used to obtain the final results immediately.
 4. To reproduce the results presented in Figures 1 and 2 and Tables 1 to 3:
-(1)Load the files from the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' located in './Data/Simulation/'.
-(2)Then, run the scripts 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' from the subfolder './Code/'.
+(i) Load the files from the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' located in './Data/Simulation/'.
+(ii) Then, run the scripts 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' from the subfolder './Code/'.
 
  
        (11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
