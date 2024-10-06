@@ -119,6 +119,7 @@ R codes for the implementation of our methodology are provided.
    - **For Table 4 & 5:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Run the 'Tab4.R' and 'Tab5.R' scripts from the './Code/' subfolder.
 
 
+
        (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
 
 
