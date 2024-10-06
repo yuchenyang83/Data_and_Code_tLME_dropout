@@ -103,9 +103,9 @@ R codes for the implementation of our methodology are provided.
    1. Load the files from the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' located in './Data/Simulation/'.
    2. Then, run the scripts 'Fig1.R', 'Fig2.R', 'Tab1', 'Tab2', and 'Tab3' from the subfolder './Code/'.
 
-       (11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
-       (12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
-       (13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
+	(11) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 25% dropout rate; and
+	(12) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 50% dropout rate; and
+	(13) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with 75% dropout rate.
 
 
 
@@ -116,7 +116,7 @@ To reproduce the results presented in Figures 4, just load 'fit_result.RData' fi
 To reproduce the results presented in Figures 5, just load 'fit_result.RData' file in the './Data/' and 'fix_alpha1.RData', 'fix_alpha2.RData', 'fix_alpha3.RData', 'fix_alpha4.RData', 'fix_alpha5.RData', 'fix_alpha6.RData', 'fix_alpha7.RData', 'fix_alpha8.RData', 'fix_alpha9.RData', 'fix_alpha10.RData', 'fix_alpha13.RData', 'fix_alpha14.RData', 'fix_alpha15.RData', 'fix_alpha16.RData', 'fix_alpha17.RData', 'fix_alpha18.RData', 'fix_alpha19.RData', 'fix_alpha20.RData', 'fix_alpha21.RData', 'fix_alpha22.RData', in the './Data/fix_alpha/' and then run the scripts 'Fig4.R' in the subfolder './Code/';
 To reproduce the results presented in Tables 4 and 5, just load 'fit_result.RData' file in the './Data/' and then run the scripts 'Tab4.R' and 'Tab5.R' in the subfolder './Code/'
 
-       (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
+	(14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
 
 
 #### Subfolder: ./Data ####
