@@ -111,11 +111,8 @@ R codes for the implementation of our methodology are provided.
 
 
 ###### Note for Section 6 - Illustrative examples - AIDS clinical trial:
-Because the 'fit_aids.R' code takes a huge amount of time to run the MCECM procedure for fitting the fitting the LME and tLME models with non-ignorable dropout, we record these intermediate results in 'fit_result.RData' from ./Data' so that one can use the R codes 'Fig3.R', 'Fig4.R', 'Fig5.R',  'Tab4', and 'Tab5' to obtain the final results immediately.
-To reproduce the results presented in Figures 3, just load 'aids.RData' file in the './Data/source' and then run the script 'Fig5.R' in the subfolder './Code/';
-To reproduce the results presented in Figures 4, just load 'fit_result.RData' file in the './Data/' and then run the scripts 'Fig4.R' in the subfolder './Code/';
-To reproduce the results presented in Figures 5, just load 'fit_result.RData' file in the './Data/' and 'fix_alpha1.RData', 'fix_alpha2.RData', 'fix_alpha3.RData', 'fix_alpha4.RData', 'fix_alpha5.RData', 'fix_alpha6.RData', 'fix_alpha7.RData', 'fix_alpha8.RData', 'fix_alpha9.RData', 'fix_alpha10.RData', 'fix_alpha13.RData', 'fix_alpha14.RData', 'fix_alpha15.RData', 'fix_alpha16.RData', 'fix_alpha17.RData', 'fix_alpha18.RData', 'fix_alpha19.RData', 'fix_alpha20.RData', 'fix_alpha21.RData', 'fix_alpha22.RData', in the './Data/fix_alpha/' and then run the scripts 'Fig4.R' in the subfolder './Code/';
-To reproduce the results presented in Tables 4 and 5, just load 'fit_result.RData' file in the './Data/' and then run the scripts 'Tab4.R' and 'Tab5.R' in the subfolder './Code/'
+1. The 'fit_aids.R' code takes a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
+2. Intermediate results are recorded in 'fit_result.RData' located in './Data' so that the R codes 'Fig3.R', 'Fig4.R', 'Fig5.R', 'Tab4.R', and 'Tab5.R' can be used to obtain the final results immediately.
 
 	(14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
 
