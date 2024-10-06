@@ -114,7 +114,9 @@ R codes for the implementation of our methodology are provided.
 2. Intermediate results are recorded in 'fit_result.RData' located in './Data' so that the R codes 'Fig3.R', 'Fig4.R', 'Fig5.R', 'Tab4.R', and 'Tab5.R' can be used to obtain the final results immediately.
 3. Steps to reproduce the results:
    - **For Figure 3:** (i) Load the 'aids.RData' file from './Data/source'. (ii) Run the 'Fig3.R' script from the './Code/' subfolder.
-   - 
+   - **For Figure 4:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Run the 'Fig4.R' script from the './Code/' subfolder.
+   - **For Figure 5:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Load the 'fix_alpha' files: 'fix_alpha1.RData' through 'fix_alpha22.RData' from the './Data/fix_alpha/' directory. (iii) Run the 'Fig4.R' script from the './Code/' subfolder.
+   - **For Table 4 & 5:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Run the 'Tab4.R' and 'Tab5.R' scripts from the './Code/' subfolder.
 
 
        (14) 'fit_aids.R' main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
