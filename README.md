@@ -40,21 +40,21 @@ The 'getwd()' function shall determine an absolute pathname of the "current work
 
 Before running all of the codes, one needs to install the following R packages:
     
-    install.packages("mvtnorm")  Version: 1.3-1
-    install.packages("ggplot2") Version: 3.5.1
-    install.packages("pROC") Version: 1.18.5
-    install.packages("gridExtra") Version: 2.3
-    install.packages("ggtext") Version: 0.1.2
-    install.packages("rlang") Version: 1.1.4
-    install.packages("cowplot") Version: 1.1.3
-    install.packages("glue") Version: 1.7.0
-    install.packages("nlme") Version: 3.1-164
+    install.packages("mvtnorm")  # Version: 1.3-1
+    install.packages("ggplot2") # Version: 3.5.1
+    install.packages("pROC") # Version: 1.18.5
+    install.packages("gridExtra") # Version: 2.3
+    install.packages("ggtext") # Version: 0.1.2
+    install.packages("rlang") # Version: 1.1.4
+    install.packages("cowplot") # Version: 1.1.3
+    install.packages("glue") # Version: 1.7.0
+    install.packages("nlme") # Version: 3.1-164
     
 
 R codes for the implementation of our methodology for a AIDS dataset and simulation results are provided.
 
-#### Subfolder: ./Function ####
-'./Function/'
+#### Subfolder: ./function ####
+'./function/'
        contains 
        
 	(1) the subfolder 'simulation', in this folder contains '.R' file code for simulation studies that can fit the LME and tLME models with non-ignorable dropout consisting of different missing mechanisms;
@@ -63,21 +63,21 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 	(4) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
 	(5) 'computer.pvi.R' calculate the probability of dropout for each subject at each time point;
 	(6) 'multiplot.R'  main script for combining multiple plots by ggplot2 package;
-	(7) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout.
+	(7) 'analyze_realdata_AIDSR.R' that can assist for fitting the LME and tLME models with non-ignorable dropout.
 
-'./Function/simulation'
+'./function/simulation'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the simulation study, including
 	
 	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
 	(2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
-	(3) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout
+	(3) 'simulate_dropout_study.R' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
-'./Function/fixed_alpha'
+'./function/fixed_alpha'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the sensitivity analysis, including
 	
 	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
 	(2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
-	(3) 'functionR' that can assist for fitting the LME and tLME models with non-ignorable dropout
+	(3) 'run_sensitivity_analysis.R' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 
 #### Subfolder: ./Code ####
@@ -89,12 +89,15 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 	(3) 'Fig3.R' main script for reproducing Figure 3; 
 	(4) 'Fig4.R' main script for reproducing Figure 4; 
 	(5) 'Fig5.R' main script for reproducing Figure 5; 
-	(6) 'Fig6.R' main script for reproducing Figure 6; 
-	(7) 'Tab1.R' main script for Table 1;
-	(8) 'Tab2.R' main script for Table 2;
-	(9) 'Tab3.R' main script for Table 3;
-	(10) 'Tab4.R' main script for Table 4;
-	(11) 'Tab5.R' main script for Table 5;
+	(6) 'Fig6.R' main script for reproducing Figure 6;
+ 	(7) 'FigC1.R' main script for reproducing Figure C1; 
+	(8) 'FigC2.R' main script for reproducing Figure C2; 
+	(9) 'FigC3.R' main script for reproducing Figure C3; 
+	(10) 'Tab1.R' main script for Table 1;
+	(11) 'Tab2.R' main script for Table 2;
+	(12) 'Tab3.R' main script for Table 3;
+	(13) 'Tab4.R' main script for Table 4;
+	(14) 'Tab5.R' main script for Table 5;
 
 ###### Note for Section 5 - Illustrative examples - simulated data:
 1. The 'simSEM25.R', 'simSEM50.R', and 'simSEM75.R' codes require a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
@@ -106,9 +109,9 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 
 
 ###
-	(12) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 25% dropout rate.
-	(13) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 50% dropout rate.
-	(14) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 75% dropout rate.
+	(15) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 25% dropout rate.
+	(16) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 50% dropout rate.
+	(17) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 75% dropout rate.
 
 
 
@@ -124,9 +127,9 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 
 
 
-	(15) 'fit_aids.R' is the main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
-	(16) 'DemoExample.R' is a demonstration script that generates a simulated dataset to illustrate the implementation of our proposed method. Detailed results and implementation can be found in Appendix C of the Supplementary Material.
-	(17) 'fit_aids_fixalpha.R' is the main script for fitting the tLME model under the MNAR mechanism, where the parameter alpha2 is fixed at values ranging from -16 to 16.
+	(18) 'fit_aids.R' is the main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
+	(19) 'DemoExample.R' is a demonstration script that generates a simulated dataset to illustrate the implementation of our proposed method. Detailed results and implementation can be found in Appendix C of the Supplementary Material.
+	(20) 'fit_aids_fixalpha.R' is the main script for fitting the tLME model under the MNAR mechanism, where the parameter alpha2 is fixed at values ranging from -16 to 16.
 
 
 
