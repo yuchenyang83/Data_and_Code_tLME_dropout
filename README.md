@@ -177,13 +177,16 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
        (2) 'Figure2.pdf' shows the trajectory plot of responses for one simulated case of size N = 100 (left panel), box plots for responses for subjects in the two prespecified groups (right top panel), and bar chart of frequency distribution of number of observed responses (right bottom panel).
        (3) 'Figure3.pdf' shows the MSE scores for the estimated parameters under fitted tLME model with the MNAR mechanism for three dropout rates across various sample sizes.
        (4) 'Figure4.pdf' shows the MSE scores for the estimated parameters under fitted tLME and LME model with the MNAR mechanism for three dropout rates across various sample sizes.
-       (4) 'Figure5.pdf' displays ROC curves obtained from the best fitted LME models under the three mechanisms.
-       (5) 'Figure6.pdf' displays estimated fixed effects parameters (solid line) and 95% confidence intervals (dashed lines) from the fitted tLME model with MNAR.
-       (6) 'Table1.csv' lists the simulation results for assessing the asymptotic standard errors (IM SE) and empirical standard deviations (MC Sd) of parameters estimates under fitted tLME model with the MNAR mechanism across various sample sizes.
-       (7) 'Table2.csv' reports the average AIC and BIC scores together with frequencies (in parentheses) supported by the two criteria for the LME and tLME models with various sample sizes and dropout rates. The result for the best performance per row is highlighted in bold.
-       (8) 'Table3.csv' reports the comparison of predictive accuracies of missing responses in terms of MSPE between the LME and tLME models. The frequencies (Freq) favored by the model with a lower MSPE value are also recorded. The result for the best performance per row is highlighted in bold.
-       (9) 'Table4.csv' lists the fitting results for the 24 candidate models, including the number of unknown parameters, maximized log-likelihood values together with AIC and BIC scores for determining the preferred model.
-       (10) 'Table5.csv' presents a comparison of the ML estimates of parameters together with their standard errors (SE) obtained from the tLME model with AR(1) errors under the three mechanisms.
+       (5) 'Figure5.pdf' displays ROC curves obtained from the best fitted LME models under the three mechanisms.
+       (6) 'Figure6.pdf' displays estimated fixed effects parameters (solid line) and 95% confidence intervals (dashed lines) from the fitted tLME model with MNAR.
+       (7) 'FigureC1.pdf' shows the trajectory plot of responses for one simulated case of size N = 50.
+       (8) 'FigureC2.pdf' displays the box plots for responses for subjects in the two prespecified groups.
+       (9) 'FigureC3.pdf' bar chart of frequency distribution of number of observed responses.
+       (10) 'Table1.csv' lists the simulation results for assessing the asymptotic standard errors (IM SE) and empirical standard deviations (MC Sd) of parameters estimates under fitted tLME model with the MNAR mechanism across various sample sizes.
+       (11) 'Table2.csv' reports the average AIC and BIC scores together with frequencies (in parentheses) supported by the two criteria for the LME and tLME models with various sample sizes and dropout rates. The result for the best performance per row is highlighted in bold.
+       (12) 'Table3.csv' reports the comparison of predictive accuracies of missing responses in terms of MSPE between the LME and tLME models. The frequencies (Freq) favored by the model with a lower MSPE value are also recorded. The result for the best performance per row is highlighted in bold.
+       (13) 'Table4.csv' lists the fitting results for the 24 candidate models, including the number of unknown parameters, maximized log-likelihood values together with AIC and BIC scores for determining the preferred model.
+       (14) 'Table5.csv' presents a comparison of the ML estimates of parameters together with their standard errors (SE) obtained from the tLME model with AR(1) errors under the three mechanisms.
 
 ### Some Remarks ###
 Note 1: To ensure that the comparison among different methods is evaluated based on the same simulated data, 
