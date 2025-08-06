@@ -60,23 +60,23 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 	(1) the subfolder 'simulation', in this folder contains '.R' file code for simulation studies that can fit the LME and tLME models with non-ignorable dropout consisting of different missing mechanisms;
 	(2) the subfolder 'fixed_alpha', in this folder contains '.R' file code for sensitivity analysis;
 	(3) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-	(4) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
+	(4) 'LMMmissingSEM.R' main script for fitting the LME model with non-ignorable dropout;
 	(5) 'computer.pvi.R' calculate the probability of dropout for each subject at each time point;
 	(6) 'multiplot.R'  main script for combining multiple plots by ggplot2 package;
-	(7) 'analyze_realdata_AIDSR.R' that can assist for fitting the LME and tLME models with non-ignorable dropout.
+	(7) 'analyze_realdata_AIDSR.R' that can assist in fitting the LME and tLME models with non-ignorable dropout.
 
 './function/simulation'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the simulation study, including
 	
 	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-	(2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
+	(2) 'LMMmissingSEM.R' main script for fitting the LME model with non-ignorable dropout;
 	(3) 'simulate_dropout_study.R' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 './function/fixed_alpha'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the sensitivity analysis, including
 	
 	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-	(2) 'LMMmissingSEM.R' main script for fitting the LME model with with non-ignorable dropout;
+	(2) 'LMMmissingSEM.R' main script for fitting the LME model with non-ignorable dropout;
 	(3) 'run_sensitivity_analysis.R' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 
@@ -124,16 +124,13 @@ To execute a single replication with a specific seed (e.g., seed = 123), use the
 
  ###### Code structure and output
 Each simulation script will:
-
 Load the required functions from the ./function/simulation/ directory
-
 Apply the MCECM algorithm for fitting LME and tLME models under three MNAR mechanisms
-
 Save the results to the corresponding subdirectory inside ./Data/Simulation/, depending on the dropout level:
 
 	SS-simulationSEM-t25 for simSEM25.R
 	SS-simulationSEM-t50 for simSEM50.R
- 	SS-simulationSEM-t75 for simSEM75.R
+	SS-simulationSEM-t75 for simSEM75.R
 
 ###### The default number of replications is 100 if Repp is not specified.
 
@@ -220,11 +217,11 @@ Note 1: To ensure that the comparison among different methods is evaluated based
 
 Note 2: 'simSEM25.R', 'simSEM50.R', 'simSEM75.R', 'fit_aids_fixalpha.R', and 'fit_aids.R' take a long time to run. To speed up the computation, 
          you can consider smaller values for maximum number of iterations for convergence (max.iter), 
-         small sizes of Monte Carlo samples (msize) as well as  elder value for rate of convergence (tol).
+         small sizes of Monte Carlo samples (msize) as well as larger value for rate of convergence (tol).
          Although the results won't be coincided with reported result of manuscript but the general results will be established.
 
 Note 3: Because of missing values that relies on random numbers (set.seed(#)), 
-        the outcomes of 'simSEM25.R', 'simSEM50.R', 'simSEM75.R', 'fit_aids_fixalpha.R', and 'fit_aids.R' may be slightly different from manuscript reportage. 
-        Nevertheless still obtains similar results, and the different set.seed(#) value does not damage the general results of manuscript.
+        the outcomes of 'simSEM25.R', 'simSEM50.R', 'simSEM75.R', 'fit_aids_fixalpha.R', and 'fit_aids.R' may be slightly different from the reported results in the manuscript.
+        Nevertheless, similar results can still be obtained, and different set.seed(#) values do not affect the general conclusions of the manuscript.
 
-Note 4: One can directly run each "source(.)" described in 'master.r' file in the seperate R session to obtain the results.
+Note 4: One can directly run each "source(.)" described in 'master.r' file in a separate R session to obtain the results.
