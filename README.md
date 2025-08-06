@@ -113,6 +113,12 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 	(16) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 50% dropout rate.
 	(17) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 75% dropout rate.
 
+###### Running a single simulation and setting a fixed random seed
+To perform spot checks of reproducibility for specific simulation settings without running all 100 replications, each simulation script—simSEM25.R, simSEM50.R, and simSEM75.R—has been modified to accept two optional arguments:
+
+	seednum: an integer specifying the random seed (default = NULL)
+	Repp: an integer specifying the number of simulation replications (default = 100)
+
 
 
 ###### Note for Section 6 - Illustrative examples - AIDS clinical trial:
