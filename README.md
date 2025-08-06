@@ -119,7 +119,27 @@ To perform spot checks of reproducibility for specific simulation settings witho
 	seednum: an integer specifying the random seed (default = NULL)
 	Repp: an integer specifying the number of simulation replications (default = 100)
 
+To execute a single replication with a specific seed (e.g., seed = 123), use the following command in R:
+	seednum = 123; Repp = 1
 
+ ###### Code structure and output
+Each simulation script will:
+
+Load the required functions from the ./function/simulation/ directory
+
+Apply the MCECM algorithm for fitting LME and tLME models under three MNAR mechanisms
+
+Save the results to the corresponding subdirectory inside ./Data/Simulation/, depending on the dropout level:
+
+	SS-simulationSEM-t25 for simSEM25.R
+	SS-simulationSEM-t50 for simSEM50.R
+ 	SS-simulationSEM-t75 for simSEM75.R
+
+###### The default number of replications is 100 if Repp is not specified.
+
+A fixed seed ensures that the Monte Carlo sample and estimation path can be fully reproduced.
+
+Spot checks can be performed by running a few independent replications with different seed values.
 
 ###### Note for Section 6 - Illustrative examples - AIDS clinical trial:
 1. The 'fit_aids.R' code takes a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
