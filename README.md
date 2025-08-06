@@ -5,7 +5,7 @@
 ### Author responsible for the code
 For questions, comments or remarks about the code please contact responsible author, Tsung-I Lin (tilin@nchu.edu.tw).
 
-######## Configurations ########
+#### Configurations
 The code was written/evaluated in R with the following software versions:
 R version 4.3.1 (2023-06-16 ucrt)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
@@ -34,9 +34,9 @@ loaded via a namespace (and not attached):
 [22] tidyselect_1.2.1  utf8_1.2.4        pillar_1.9.0      magrittr_2.0.3    tools_4.4.1       withr_3.0.1       gtable_0.3.5     
 [29] xml2_1.3.6 
 
-######## Descriptions of the codes ######### 
+#### Descriptions of the codes
 Please copy the files to the "current working directory" of the R package.
-The 'getwd()' function shall determine an absolute pathname of the "current working directory".
+The getwd() function returns the absolute pathname of the "current working directory", which in our setup is typically set to D:/Data_and_Code/.
 
 Before running all of the codes, one needs to install the following R packages:
     
