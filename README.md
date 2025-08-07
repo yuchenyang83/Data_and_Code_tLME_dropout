@@ -79,8 +79,8 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 './function/simulation'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the simulation study, including
 	
-	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-	(2) 'LMMmissingSEM.R' main script for fitting the LME model with non-ignorable dropout;
+	(1) 'tLMMmissingSEM_fixAlpha.R' main script for fitting the tLME model with non-ignorable dropout;
+	(2) 'LMMmissingSEM_fixAlpha.R' main script for fitting the LME model with non-ignorable dropout;
 	(3) 'simulate_dropout_study.R' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 './function/fixed_alpha'
@@ -179,7 +179,7 @@ Spot checks can be performed by running a few independent replications with diff
 	(1) 'fit_result.RData' collects the fitting results of the LME and tLME models with the three missing data mechanisms and four within-patient autocorrelation structures applied to the AIDS data.
 	(2) The subfolder 'Simulation' contains the three simulation studies used in Section 5, collecting the results of 100 replications for each component.
 	(3) 'fixed_alpha.txt' contains the results of the sensitivity analysis, collecting fixed alpha 2 values within the range of -16, -8, -2, -1, -0.5, -0.1, -0.05, -0.01, -0.001, 0.001, 0.01, 0.05, 0.1, 0.5, 1, 2, 4, 8, 16.
-	(4) The subfolder 'source' contains the AIDS dataset used in Section 6.
+	(4) The subfolder 'source' contains the AIDS dataset used in Section 2 & 6.
 
 './Data/source'
 	subfolder contains
