@@ -99,7 +99,7 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 	(13) 'Tab4.R' main script for Table 4;
 	(14) 'Tab5.R' main script for Table 5;
 
-###### Note for Section 5 - Illustrative examples - simulated data:
+##### Note for Section 5 - Illustrative examples - simulated data:
 1. The 'simSEM25.R', 'simSEM50.R', and 'simSEM75.R' codes require a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
 2. Every 100 replications result is recorded in the subfolders 'SS-simulationSEM-t25', 'SS-simulationSEM-t50', and 'SS-simulationSEM-t75' from './Data/Simulation/' respectively.
 3. The R codes 'Fig2.R', 'Fig3.R', 'Fig4.R', 'Tab1', 'Tab2', and 'Tab3' can be used to obtain the final results immediately.
@@ -122,7 +122,7 @@ To perform spot checks of reproducibility for specific simulation settings witho
 To execute a single replication with a specific seed (e.g., seed = 123), use the following command in R:
 	seednum = 123; Repp = 1
 
- ###### Code structure and output
+###### Code structure and output
 Each simulation script will:
 Load the required functions from the ./function/simulation/ directory
 Apply the MCECM algorithm for fitting LME and tLME models under three MNAR mechanisms
