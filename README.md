@@ -7,32 +7,43 @@ For questions, comments or remarks about the code please contact responsible aut
 
 #### Configurations
 The code was written/evaluated in R with the following software versions:
-R version 4.3.1 (2023-06-16 ucrt)
-Platform: x86_64-w64-mingw32/x64 (64-bit)
-Running under: Windows 10 x64 (build 19045)
+   - R version 4.3.1 (2023-06-16 ucrt)
+   - Platform: x86_64-w64-mingw32/x64 (64-bit)
+   - Running under: Windows 10 x64 (build 19045)
 
 Matrix products: default
 
 
 locale:
-[1] LC_COLLATE=Chinese (Traditional)_Taiwan.utf8  LC_CTYPE=Chinese (Traditional)_Taiwan.utf8    LC_MONETARY=Chinese (Traditional)_Taiwan.utf8
-[4] LC_NUMERIC=C                                  LC_TIME=Chinese (Traditional)_Taiwan.utf8    
+   - LC_COLLATE=Chinese (Traditional)_Taiwan.utf8
+   - LC_CTYPE=Chinese (Traditional)_Taiwan.utf8
+   - LC_MONETARY=Chinese (Traditional)_Taiwan.utf8
+   - LC_NUMERIC=C
+   - LC_TIME=Chinese (Traditional)_Taiwan.utf8    
 
 time zone: Asia/Taipei
+
 tzcode source: internal
 
-attached base packages:
-[1] grid      stats     graphics  grDevices utils     datasets  methods   base     
+attached base packages:`grid`, `stats`, `graphics`, `grDevices`, `utils`, `datasets`, `methods`, `base`
 
 other attached packages:
-[1] glue_1.7.0    pROC_1.18.5   gridExtra_2.3 ggtext_0.1.2  rlang_1.1.4   cowplot_1.1.3 mvtnorm_1.3-1 ggplot2_3.5.1 nlme_3.1-164
+1. `glue_1.7.0`  
+2. `pROC_1.18.5`  
+3. `gridExtra_2.3`  
+4. `ggtext_0.1.2`  
+5. `rlang_1.1.4`  
+6. `cowplot_1.1.3`  
+7. `mvtnorm_1.3-1`  
+8. `ggplot2_3.5.1`  
+9. `nlme_3.1-164`
 
 loaded via a namespace (and not attached):
- [1] crayon_1.5.3      vctrs_0.6.5       cli_3.6.3         generics_0.1.3    labeling_0.4.3    colorspace_2.1-1  plyr_1.8.9       
- [8] gridtext_0.1.5    scales_1.3.0      fansi_1.0.6       munsell_0.5.1     tibble_3.2.1      lifecycle_1.0.4   compiler_4.4.1   
-[15] dplyr_1.1.4       Rcpp_1.0.13       pkgconfig_2.0.3   rstudioapi_0.16.0 farver_2.1.2      lattice_0.22-6    R6_2.5.1         
-[22] tidyselect_1.2.1  utf8_1.2.4        pillar_1.9.0      magrittr_2.0.3    tools_4.4.1       withr_3.0.1       gtable_0.3.5     
-[29] xml2_1.3.6 
+1. crayon_1.5.3, 2. vctrs_0.6.5, 3. cli_3.6.3, 4. generics_0.1.3, 5. labeling_0.4.3, 6. colorspace_2.1-1, 7. plyr_1.8.9,  
+8. gridtext_0.1.5, 9. scales_1.3.0, 10. fansi_1.0.6, 11. munsell_0.5.1, 12. tibble_3.2.1, 13. lifecycle_1.0.4, 14. compiler_4.4.1,  
+15. dplyr_1.1.4, 16. Rcpp_1.0.13, 17. pkgconfig_2.0.3, 18. rstudioapi_0.16.0, 19. farver_2.1.2, 20. lattice_0.22-6, 21. R6_2.5.1,  
+22. tidyselect_1.2.1, 23. utf8_1.2.4, 24. pillar_1.9.0, 25. magrittr_2.0.3, 26. tools_4.4.1, 27. withr_3.0.1, 28. gtable_0.3.5,  
+29. xml2_1.3.6
 
 #### Descriptions of the codes
 Please copy the files to the "current working directory" of the R package.
@@ -133,8 +144,6 @@ Save the results to the corresponding subdirectory inside ./Data/Simulation/, de
 	SS-simulationSEM-t75 for simSEM75.R
 
 ###### The default number of replications is 100 if Repp is not specified.
-
-A fixed seed ensures that the Monte Carlo sample and estimation path can be fully reproduced.
 
 Spot checks can be performed by running a few independent replications with different seed values.
 
