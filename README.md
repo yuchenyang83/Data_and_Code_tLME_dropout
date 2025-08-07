@@ -154,7 +154,14 @@ Spot checks can be performed by running a few independent replications with diff
 	(19) 'DemoExample.R' is a demonstration script that generates a simulated dataset to illustrate the implementation of our proposed method. Detailed results and implementation can be found in Appendix C of the Supplementary Material.
 	(20) 'fit_aids_fixalpha.R' is the main script for fitting the tLME model under the MNAR mechanism, where the parameter alpha2 is fixed at values ranging from -16 to 16.
 
-
+##### Note for Appendix C - Illustrative example - one simulated dataset:
+1. Appendix~C provides a representative example to illustrate the model fitting process under one simulated dataset with sample size $N = 50$ and a dropout rate of 50%.
+2. The R script 'DemoExample.R' located in the './Code/' folder executes the full analysis, including model fitting and result generation.
+3. The dataset is generated within the R script using a user-defined simulation function, with a fixed random seed specified to ensure full reproducibility.
+4. To reproduce the results presented in **Figures C1**, **C2** and **C3**:
+   - Run the scripts 'FigC1.R', 'FigC2.R', and 'FigC3.R' located in the './Code/' folder.
+   - Each script internally sets the seed and generates the simulated dataset accordingly.
+   - The resulting figures are saved as 'FigureC1.pdf', 'FigureC2.pdf', and 'FigureC3.pdf' in the './Results/' folder.
 
 #### Subfolder: ./Data ####
 './Data/'
@@ -168,7 +175,7 @@ Spot checks can be performed by running a few independent replications with diff
 './Data/source'
 	subfolder contains
 	
-	(1) 'aids.RData' is the AIDS dataset used in Section 6.
+	(1) 'aids.RData' is the AIDS dataset used in Section 2 & 6.
 
 './Data/Simulation'
 	subfolder contains
