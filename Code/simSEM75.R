@@ -6,7 +6,7 @@
 #                    with application to AIDS studies"
 #   Authors     :    Yu-Chen Yang and Wan-Lun Wang and Luis M. Castro and Tsung-I Lin
 #   Date        :    07.08.2025
-#   Purpose     :    re-generate the Datas files for the simulation
+#   Purpose     :    re-generate the results files for the simulation
 #
 #   Input code files  :  Data_and_Code/function/simulation/simulate_dropout_study.r;
 #                        Data_and_Code/function/simulation/tLMMmissingSEM.r;
@@ -226,3 +226,4 @@ for (Rep in 1:Repp) {
     write(c(Rep, MCAR.se.fit), paste(PATH1, "MCAR.se.fit.txt", sep = ""), ncol = 10000, append = T)
   }
 }
+
