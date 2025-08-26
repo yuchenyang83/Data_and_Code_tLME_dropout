@@ -136,7 +136,7 @@ To execute a single replication with a specific seed (e.g., seed = 123), use the
 ###### Code structure and output
 Each simulation script will:
 Load the required functions from the ./function/simulation/ directory
-Apply the MCECM algorithm for fitting LME and tLME models under three MNAR mechanisms
+Apply the MCECM algorithm for fitting LME and tLME models under three missing mechanisms
 Save the results to the corresponding subdirectory inside ./Data/Simulation/, depending on the dropout level:
 
 	SS-simulationSEM-t25 for simSEM25.R
@@ -153,13 +153,13 @@ Spot checks can be performed by running a few independent replications with diff
 3. Steps to reproduce the results:
    - **For Figure 1:** (i) Load the 'aids.RData' file from './Data/source'. (ii) Run the 'Fig1.R' script from the './Code/' subfolder.
    - **For Figure 5:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Run the 'Fig5.R' script from the './Code/' subfolder.
-   - **For Figure 6:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Load the 'fix_alpha' files: 'fix_alpha1.RData' through 'fix_alpha22.RData' from the './Data/fix_alpha/' directory. (iii) Run the 'Fig6.R' script from the './Code/' subfolder.
+   - **For Figure 6:** ((i) Read the 'fixed_alpha.txt'. (ii) Run the 'Fig6.R' script from the './Code/' subfolder.
    - **For Table 4 & 5:** (i) Load the 'fit_result.RData' file from './Data/'. (ii) Run the 'Tab4.R' and 'Tab5.R' scripts from the './Code/' subfolder
 ###
 
 
 
-	(18) 'fit_aids.R' is the main script for fitting the LME and tLME models under the three mechanisms. It includes four structures for within-patient autocorrelation.
+	(18) 'fit_aids.R' is the main script for fitting the LME and tLME models under the three missing mechanisms. It includes four structures for within-patient autocorrelation.
 	(19) 'DemoExample.R' is a demonstration script that generates a simulated dataset to illustrate the implementation of our proposed method. Detailed results and implementation can be found in Appendix C of the Supplementary Material.
 	(20) 'fit_aids_fixalpha.R' is the main script for fitting the tLME model under the MNAR mechanism, where the parameter alpha2 is fixed at values ranging from -16 to 16.
 
