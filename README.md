@@ -79,15 +79,15 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 './function/simulation'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the simulation study, including
 	
-	(1) 'tLMMmissingSEM_fixAlpha.R' main script for fitting the tLME model with non-ignorable dropout;
-	(2) 'LMMmissingSEM_fixAlpha.R' main script for fitting the LME model with non-ignorable dropout;
+	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
+	(2) 'LMMmissingSEM.R' main script for fitting the LME model with non-ignorable dropout;
 	(3) 'simulate_dropout_study.R' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 './function/fixed_alpha'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the sensitivity analysis, including
 	
-	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-	(2) 'LMMmissingSEM.R' main script for fitting the LME model with non-ignorable dropout;
+	(1) 'tLMMmissingSEM_fixAlpha.R' main script for fitting the tLME model with non-ignorable dropout;
+	(2) 'LMMmissingSEM_fixAlpha.R' main script for fitting the LME model with non-ignorable dropout;
 	(3) 'run_sensitivity_analysis.R' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 
