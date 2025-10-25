@@ -228,6 +228,7 @@ Spot checks can be performed by running a few independent replications with diff
        (12) 'Table3.csv' reports the comparison of predictive accuracies of missing responses in terms of MSPE between the LME and tLME models. The frequencies (Freq) favored by the model with a lower MSPE value are also recorded. The result for the best performance per row is highlighted in bold.
        (13) 'Table4.csv' lists the fitting results for the 24 candidate models, including the number of unknown parameters, maximized log-likelihood values together with AIC and BIC scores for determining the preferred model.
        (14) 'Table5.csv' presents a comparison of the ML estimates of parameters together with their standard errors (SE) obtained from the tLME model with AR(1) errors under the three mechanisms.
+	   (15) 'summarize AIDS.csv' contains descriptive statistics for the Chapter 2 AIDS dataset.
 
 ### Some Remarks ###
 Note 1: To ensure that the comparison among different methods is evaluated based on the same simulated data, 
