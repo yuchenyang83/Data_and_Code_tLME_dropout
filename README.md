@@ -70,8 +70,8 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
        
 	(1) the subfolder 'simulation', in this folder contains '.R' file code for simulation studies that can fit the LME and tLME models with non-ignorable dropout consisting of different missing mechanisms;
 	(2) the subfolder 'fixed_alpha', in this folder contains '.R' file code for sensitivity analysis;
-	(3) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-	(4) 'LMMmissingSEM.R' main script for fitting the LME model with non-ignorable dropout;
+	(3) 'tLMMmissingSEM_AIDS.R' main script for fitting the tLME model with non-ignorable dropout;
+	(4) 'LMMmissingSEM_AIDS.R' main script for fitting the LME model with non-ignorable dropout;
 	(5) 'computer.pvi.R' calculate the probability of dropout for each subject at each time point;
 	(6) 'multiplot.R'  main script for combining multiple plots by ggplot2 package;
 	(7) 'analyze_realdata_AIDSR.R' that can assist in fitting the LME and tLME models with non-ignorable dropout.
@@ -79,8 +79,8 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 './function/simulation'
 	subfolder collects functions for maximum likelihood (ML) estimation for LME and tLME models with non-ignorable dropout in the simulation study, including
 	
-	(1) 'tLMMmissingSEM.R' main script for fitting the tLME model with non-ignorable dropout;
-	(2) 'LMMmissingSEM.R' main script for fitting the LME model with non-ignorable dropout;
+	(1) 'tLMMmissingSEM_simulation.R' main script for fitting the tLME model with non-ignorable dropout;
+	(2) 'LMMmissingSEM_simulation.R' main script for fitting the LME model with non-ignorable dropout;
 	(3) 'simulate_dropout_study.R' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 './function/fixed_alpha'
@@ -162,6 +162,8 @@ Spot checks can be performed by running a few independent replications with diff
 	(18) 'fit_aids.R' is the main script for fitting the LME and tLME models under the three missing mechanisms. It includes four structures for within-patient autocorrelation.
 	(19) 'DemoExample.R' is a demonstration script that generates a simulated dataset to illustrate the implementation of our proposed method. Detailed results and implementation can be found in Appendix C of the Supplementary Material.
 	(20) 'fit_aids_fixalpha.R' is the main script for fitting the tLME model under the MNAR mechanism, where the parameter alpha2 is fixed at values ranging from -16 to 16.
+	(21) 'fit_simulation.R' — Driver script that reproduces all simulation outputs under ./Data/Simulation/. It sequentially runs simSEM25.R, simSEM50.R, and simSEM75.R with the default replication settings (or user-specified seednum/Repp), manages random-seed control, and writes results to the corresponding subfolders (SS-simulationSEM-t25, SS-simulationSEM-t50, SS-simulationSEM-t75). Use this script to fully regenerate the simulation study prior to rendering Figures 2–4 and Tables 1–3.
+	(22) summarize_AIDS.R — Utility script that computes descriptive statistics for the Chapter 2 AIDS dataset (e.g., sample size by visit, summary of baseline covariates, outcome distributions) and writes the resulting table to results/summarize AIDS.csv.
 
 ##### Note for Appendix C - Illustrative example - one simulated dataset:
 1. Appendix~C provides a representative example to illustrate the model fitting process under one simulated dataset with sample size $N = 50$ and a dropout rate of 50%.
