@@ -131,10 +131,9 @@ Use fit_simulation.R to run preconfigured checks that fully reproduce the numeri
 	Repp — ending replication index,
 	seednum — RNG seed.
 
-	(18) 'fit_simulation.R' — Driver script that reproduces all simulation outputs under ./Data/Simulation/. It sequentially runs simSEM25.R, simSEM50.R, and simSEM75.R with the default replication settings (or user-specified seednum/Repp), manages random-seed control, and writes results to the corresponding subfolders (SS-simulationSEM-t25, SS-simulationSEM-t50, SS-simulationSEM-t75). Use this script to fully regenerate the simulation study prior to rendering Figures 2–4 and Tables 1–3.
-
-
 In the full experiments, Repp is set above 100 to tolerate occasional failed fits (which are skipped). This guarantees exactly 100 successful replications are collected for every case, matching the tables and figures in the paper.
+
+	(18) 'fit_simulation.R' — Driver script that reproduces all simulation outputs under ./Data/Simulation/. It sequentially runs simSEM25.R, simSEM50.R, and simSEM75.R with the default replication settings (or user-specified seednum/Repp), manages random-seed control, and writes results to the corresponding subfolders (SS-simulationSEM-t25, SS-simulationSEM-t50, SS-simulationSEM-t75). Use this script to fully regenerate the simulation study prior to rendering Figures 2–4 and Tables 1–3.
 
 ###### Code structure and output
 Each simulation script will:
