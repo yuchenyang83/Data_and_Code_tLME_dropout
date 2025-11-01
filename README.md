@@ -170,6 +170,9 @@ Save the results to the corresponding subdirectory inside ./Data/Simulation/, de
    - Each script internally sets the seed and generates the simulated dataset accordingly.
    - The resulting figures are saved as 'FigureC1.pdf', 'FigureC2.pdf', and 'FigureC3.pdf' in the './Results/' folder.
 
+
+
+
 	(22) 'DemoExample.R' is a demonstration script that generates a simulated dataset to illustrate the implementation of our proposed method. Detailed results and implementation can be found in Appendix C of the Supplementary Material.
 
 #### Subfolder: ./Data ####
