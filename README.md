@@ -145,10 +145,6 @@ Save the results to the corresponding subdirectory inside ./Data/Simulation/, de
 	SS-simulationSEM-t50 for simSEM50.R
 	SS-simulationSEM-t75 for simSEM75.R
 
-###### The default number of replications is 100 if Repp is not specified.
-
-Spot checks can be performed by running a few independent replications with different seed values.
-
 ###### Note for Section 6 - Illustrative examples - AIDS clinical trial:
 1. The 'fit_aids.R' code takes a significant amount of time to run the MCECM procedure for fitting the LME and tLME models with non-ignorable dropout.
 2. Intermediate results are recorded in 'fit_result.RData' located in './Data' so that the R codes 'Fig1.R', 'Fig5.R', 'Fig6.R', 'Tab4.R', and 'Tab5.R' can be used to obtain the final results immediately.
