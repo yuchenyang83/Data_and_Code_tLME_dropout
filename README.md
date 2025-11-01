@@ -123,6 +123,7 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 	(15) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 25% dropout rate.
 	(16) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 50% dropout rate.
 	(17) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 75% dropout rate.
+	(18) 'fit_simulation.R' — Driver script that reproduces all simulation outputs under ./Data/Simulation/. It sequentially runs simSEM25.R, simSEM50.R, and simSEM75.R with the default replication settings (or user-specified seednum/Repp), manages random-seed control, and writes results to the corresponding subfolders (SS-simulationSEM-t25, SS-simulationSEM-t50, SS-simulationSEM-t75). Use this script to fully regenerate the simulation study prior to rendering Figures 2–4 and Tables 1–3.
 
 ###### Running a single simulation and setting a fixed random seed
 To perform spot checks of reproducibility for specific simulation settings without running all 100 replications, each simulation script—simSEM25.R, simSEM50.R, and simSEM75.R—has been modified to accept two optional arguments:
@@ -159,11 +160,9 @@ Spot checks can be performed by running a few independent replications with diff
 
 
 
-	(18) 'fit_aids.R' is the main script for fitting the LME and tLME models under the three missing mechanisms. It includes four structures for within-patient autocorrelation.
-	(19) 'DemoExample.R' is a demonstration script that generates a simulated dataset to illustrate the implementation of our proposed method. Detailed results and implementation can be found in Appendix C of the Supplementary Material.
+	(19) 'fit_aids.R' is the main script for fitting the LME and tLME models under the three missing mechanisms. It includes four structures for within-patient autocorrelation.
 	(20) 'fit_aids_fixalpha.R' is the main script for fitting the tLME model under the MNAR mechanism, where the parameter alpha2 is fixed at values ranging from -16 to 16.
-	(21) 'fit_simulation.R' — Driver script that reproduces all simulation outputs under ./Data/Simulation/. It sequentially runs simSEM25.R, simSEM50.R, and simSEM75.R with the default replication settings (or user-specified seednum/Repp), manages random-seed control, and writes results to the corresponding subfolders (SS-simulationSEM-t25, SS-simulationSEM-t50, SS-simulationSEM-t75). Use this script to fully regenerate the simulation study prior to rendering Figures 2–4 and Tables 1–3.
-	(22) 'summarize_AIDS.R' — Utility script that produces descriptive statistics for the Chapter 2 AIDS dataset, limited to patient sample sizes by visit, summaries of baseline covariates, and dropout rates. The output is written to results/summarize_AIDS.csv.
+	(21) 'summarize_AIDS.R' — Utility script that produces descriptive statistics for the Chapter 2 AIDS dataset, limited to patient sample sizes by visit, summaries of baseline covariates, and dropout rates. The output is written to results/summarize_AIDS.csv.
 
 ##### Note for Appendix C - Illustrative example - one simulated dataset:
 1. Appendix~C provides a representative example to illustrate the model fitting process under one simulated dataset with sample size $N = 50$ and a dropout rate of 50%.
@@ -173,6 +172,8 @@ Spot checks can be performed by running a few independent replications with diff
    - Run the scripts 'FigC1.R', 'FigC2.R', and 'FigC3.R' located in the './Code/' folder.
    - Each script internally sets the seed and generates the simulated dataset accordingly.
    - The resulting figures are saved as 'FigureC1.pdf', 'FigureC2.pdf', and 'FigureC3.pdf' in the './Results/' folder.
+
+   22) 'DemoExample.R' is a demonstration script that generates a simulated dataset to illustrate the implementation of our proposed method. Detailed results and implementation can be found in Appendix C of the Supplementary Material.
 
 #### Subfolder: ./Data ####
 './Data/'
