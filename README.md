@@ -123,16 +123,18 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 	(15) The main script 'simSEM25.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 25% dropout rate.
 	(16) The main script 'simSEM50.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 50% dropout rate.
 	(17) The main script 'simSEM75.R' is used to fit LME and tLME models under three missing data mechanisms to simulated datasets with a 75% dropout rate.
+
+###### One-click verification
+Use fit_simulation.R to run preconfigured checks that fully reproduce the numerical results of the simulation study. The script already sets:
+
+	Rep — starting replication index,
+	Repp — ending replication index,
+	seednum — RNG seed.
+
 	(18) 'fit_simulation.R' — Driver script that reproduces all simulation outputs under ./Data/Simulation/. It sequentially runs simSEM25.R, simSEM50.R, and simSEM75.R with the default replication settings (or user-specified seednum/Repp), manages random-seed control, and writes results to the corresponding subfolders (SS-simulationSEM-t25, SS-simulationSEM-t50, SS-simulationSEM-t75). Use this script to fully regenerate the simulation study prior to rendering Figures 2–4 and Tables 1–3.
 
-###### Running a single simulation and setting a fixed random seed
-To perform spot checks of reproducibility for specific simulation settings without running all 100 replications, each simulation script—simSEM25.R, simSEM50.R, and simSEM75.R—has been modified to accept two optional arguments:
 
-	seednum: an integer specifying the random seed (default = NULL)
-	Repp: an integer specifying the number of simulation replications (default = 100)
-
-To execute a single replication with a specific seed (e.g., seed = 123), use the following command in R:
-	seednum = 123; Repp = 1
+In the full experiments, Repp is set above 100 to tolerate occasional failed fits (which are skipped). This guarantees exactly 100 successful replications are collected for every case, matching the tables and figures in the paper.
 
 ###### Code structure and output
 Each simulation script will:
