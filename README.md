@@ -91,6 +91,9 @@ R codes for the implementation of our methodology for a AIDS dataset and simulat
 	(3) 'run_sensitivity_analysis.R' that can assist for fitting the LME and tLME models with non-ignorable dropout
 
 
+#### Subfolder: ./man ####
+./man/ contains the roxygen2-generated help files (.Rd) for all user-defined functions documented in the ./function/ folders. These files are produced from roxygen2 headers placed directly above each function, with @param and @return entries (and optional @details).
+
 #### Subfolder: ./Code ####
 './Code/'
        contains 
