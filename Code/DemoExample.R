@@ -52,7 +52,7 @@ X <- gen.Data.miss$X
 Z <- gen.Data.miss$Z
 Data <- Data.miss
 
-k1 <- ggplot(data = Data[which(Data$R != 1), ], aes(x = Time, y = Var1, col = as.factor(treat), shape = as.factor(treat), grop = as.factor(Subject))) +
+k1 <- ggplot(data = Data[which(Data$R != 1), ], aes(x = Time, y = Var1, col = as.factor(treat), shape = as.factor(treat), group = as.factor(Subject))) +
   geom_line() +
   geom_point(size = 3) +
   xlab("Time") +
@@ -68,7 +68,7 @@ k1 <- ggplot(data = Data[which(Data$R != 1), ], aes(x = Time, y = Var1, col = as
   theme(legend.title = element_blank())
 k1
 
-k2 <- ggplot(data = Data[-which(is.na(Data$Var1)), ], aes(x = as.factor(Time), y = Var1, col = as.factor(treat), shape = as.factor(treat), grop = as.factor(Time))) +
+k2 <- ggplot(data = Data[-which(is.na(Data$Var1)), ], aes(x = as.factor(Time), y = Var1, col = as.factor(treat), shape = as.factor(treat), group = as.factor(Time))) +
   geom_boxplot(na.rm = T) +
   xlab(NULL) +
   ylab(expression(paste("Measurements of ", y[ij]^"o"))) +
@@ -99,8 +99,8 @@ k3
 ## Model Fitting
 
 fm2 <- lme(Var1 ~ week + treat * week,
-  data = Data[which(Data$R != 1), ],
-  random = ~ week | Subject, method = "ML"
+           data = Data[which(Data$R != 1), ],
+           random = ~ week | Subject, method = "ML"
 )
 
 
@@ -124,7 +124,9 @@ per <- 20
 # Fit t LME model with MNAR dropout
 cat(rep("=", 15), "Student's t of Linear mixed models with MNAR missing", cor.type[1], " errors: ", "\n")
 est.MNAR <- tLMM.miss.SEM(Data, X, Z, V, g, init.para = init.para, cor.type = c("UNC"), M = 1000, M.LL = 1000, tol = 1e-6, max.iter = max.iter, per = per, mechanism = "MNAR")
+est.MNAR$model.inf$bic; est.MNAR$MSE.y
 
 # Fit LME model with MNAR dropout
 cat(rep("=", 15), "Linear mixed models with MNAR missing", cor.type[1], " errors: ", "\n")
 fit.MNAR <- LMM.miss.SEM(Data, X, Z, V, g, init.para = init.para, cor.type = c("UNC"), M = 1000, M.LL = 1000, tol = 1e-6, max.iter = max.iter, per = per, mechanism = "MNAR")
+fit.MNAR$model.inf$bic; fit.MNAR$MSE.y

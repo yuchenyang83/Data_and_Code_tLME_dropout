@@ -1,8 +1,8 @@
 ################################################################################
 #
 #   Filename    :    simSEM25.R
-#   Project    : BiomJ article "Extending t linear mixed models for longitudinal 
-#                data with non-ignorable dropout applied to AIDS studies"                                                           
+#   Project     : BiomJ article "Extending t linear mixed models for longitudinal 
+#                 data with non-ignorable dropout applied to AIDS studies"                                                           
 #   Authors     :    Yu-Chen Yang and Wan-Lun Wang and Luis M. Castro and Tsung-I Lin
 #   Date        :    07.08.2025
 #   Purpose     :    re-generate the results files for the simulation
